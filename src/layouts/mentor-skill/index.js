@@ -1,0 +1,1 @@
+export {default as Skillsearch} from "./components/Skillsearch"

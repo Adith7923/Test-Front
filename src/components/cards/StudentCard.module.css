@@ -1,0 +1,243 @@
+.cards {
+  position: relative;
+  width: 169px;
+  cursor: pointer;
+}
+
+.cardOutline {
+  z-index: 1;
+  display: flex;
+  width: 169px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 1.8rem;
+  color: var(--white);
+}
+
+.cardOutlineHover {
+  z-index: 1;
+  display: flex;
+  width: 169px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 1.8rem;
+  color: var(--black);
+}
+
+.maincontent {
+  z-index: 1;
+  display: flex;
+  width: 193px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: -2px;
+}
+
+.studentImage {
+  z-index: 1;
+  max-width: 53px;
+  height: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 82px;
+  border: 3px solid var(--neutral800);
+  background: var(--white);
+}
+
+.studentname {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -0.41px;
+}
+
+.studentid {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.41px;
+}
+
+.studentcollege {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: -0.41px;
+  text-align:left;
+}
+
+.studentmail {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.16px;
+}
+
+.studentphonenumber {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.16px;
+}
+
+.leftCard {
+  position: absolute;
+  width: 150px;
+  height: 194px;
+  border-radius: 20px 0 0 20px;
+  background-color: var(--neutral800);
+  left: 0;
+  top: 0;
+}
+
+.leftCardHover {
+  position: absolute;
+  width: 150px;
+  height: 194px;
+  border-radius: 20px 0 0 20px;
+  background-color: var(--neutral300);
+  left: 0;
+  top: 0;
+}
+
+.rightCard {
+  position: absolute;
+  width: 230px;
+  height: 160px;
+  border-radius: 0 0 20px 20px;
+  left: 0;
+  top: 70px;
+  background-color: var(--neutral800);
+}
+
+.rightCardHover {
+  position: absolute;
+  width: 230px;
+  height: 160px;
+  border-radius: 0 0 20px 20px;
+  left: 0;
+  top: 70px;
+  background-color: var(--neutral300);
+}
+
+.mask {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 0 0 0 90%;
+  left: 174px;
+  box-shadow: -3px 3px 0 3px var(--neutral800);
+  top: 17px;
+}
+
+.maskHover {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 0 0 0 90%;
+  left: 174px;
+  top: 17px;
+  box-shadow: -3px 3px 0 3px var(--neutral300);
+}
+
+.mask2 {
+  position: absolute;
+  width: 24px;
+  height: 20px;
+  border-radius: 0 69% 0 0;
+  left: 150px;
+  top: 0px;
+  background-color: var(--neutral800);
+}
+
+.mask2Hover {
+  position: absolute;
+  width: 24px;
+  height: 20px;
+  border-radius: 0 69% 0 0;
+  left: 150px;
+  top: 0px;
+  background-color: var(--neutral300);
+}
+
+.mask3 {
+  position: absolute;
+  width: 20px;
+  height: 23px;
+  border-radius: 0 69% 0 0;
+  left: 210px;
+  top: 57px;
+  background-color: var(--neutral800);
+}
+
+.mask3Hover {
+  position: absolute;
+  width: 20px;
+  height: 23px;
+  border-radius: 0 69% 0 0;
+  left: 210px;
+  top: 57px;
+  background-color: var(--neutral300);
+}
+
+.mask4 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 0 0 0 90%;
+  left: 172px;
+  top: 17px;
+  box-shadow: -18px 18px 0 18px var(--neutral800);
+}
+
+.mask4Hover {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 0 0 0 90%;
+  left: 172px;
+  top: 17px;
+  box-shadow: -18px 18px 0 18px var(--neutral300);
+}
+
+.arrow {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 0 0 0.5px var(--white);
+  border-radius: 50%;
+  left: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  top: 2px;
+  cursor: pointer;
+}
+
+.arrowHover {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 0 0 0.5px var(--white);
+  border-radius: 50%;
+  left: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border: 0.4px solid var(--primary-color);
+  color: #000000;
+  box-shadow: none;
+  background-color: var(--primary-color);
+  top: 2px;
+  cursor: pointer;
+}

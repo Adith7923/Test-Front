@@ -1,0 +1,167 @@
+.cards {
+    position: relative;
+}
+
+.miniheadingDelete {
+    display: flex;
+    align-items: center;
+    gap: 130px;
+}
+
+.cardsminiheading {
+    width: 50px;
+    height: 25px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: break-word;
+    display: flex;
+    align-items: center;
+}
+
+.cardsDeleteEdit {
+    visibility: hidden;
+}
+
+.rightCard:hover .cardsDeleteEdit {
+    visibility: visible;
+}
+
+.rightCard:hover .deleteTextIcon {
+    color: var(--warning-color);
+    stroke-width: 1px;
+}
+
+.cardsdiscription {
+    width: 175px;
+    height: 22px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: break-word;
+    display: inline-block;
+}
+
+.cardsmainheading {
+    width: 175px;
+    height: 48px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.41px;
+    text-align: left;
+    overflow: hidden;
+    word-break: break-word;
+}
+
+.cardsbottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: calc(209px + 34px);
+    height: calc(110px + 48px);
+    padding: 24px 17px;
+}
+
+.leftCard,
+.rightCard {
+    border: 1px solid var(--neutral800);
+    border-radius: 20px;
+    gap: 10px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--white);
+    background: var(--neutral800);
+    overflow: hidden;
+    transition: color 0.25s, background-color 0.25s;
+}
+
+.leftCard {
+    width: 282px;
+    height: 168px;
+}
+
+.rightCard {
+    width: 232px;
+    height: 151px;
+}
+
+.leftCard:hover,
+.rightCard:hover {
+    color: var(--black);
+    cursor: pointer;
+    border: 1px solid var(--white);
+    background: var(--white);
+}
+
+.deleteIcon,
+.editIcon {
+    color: var(--primary-color);
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.deleteIcon {
+    top: 20%;
+}
+
+.editIcon {
+    top: 79%;
+}
+
+.leftCard:hover .creationDate {
+    color: var(--black);
+}
+
+.rightCard:hover .deleteIcon,
+.rightCard:hover .editIcon,
+.rightCard:hover .creationDate {
+    color: var(--black);
+}
+
+.creationDate {
+    font-size: 12px;
+    color: var(--neutral400);
+}
+
+@keyframes highlight {
+    0% {
+        transform: scale(1);
+        background-color: var(--white);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.rightCard.highlight {
+    animation: highlight 3s ease-in-out;
+}
+
+.leftCard.highlight {
+    animation: highlight 3s ease-in-out;
+}

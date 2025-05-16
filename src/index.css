@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Urbanist', sans-serif;
+}
+
+:root {
+    --primary-color: #baff66;
+    --secondary-color: #1a1a1a;
+    --warning-color: #ff6666;
+    --background: #2e2d2d;
+    --neutral800: #494949;
+    --neutral700: #5f5f5f;
+    --neutral600: #8c8c8c;
+    --neutral500: #b0b0b0;
+    --neutral400: #cdcaca;
+    --neutral300: #e1e1e1;
+    --neutral200: #d9dbe9;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+body {
+    background-color: var(--background);
+}
+
+.padding {
+    padding: 2vh 4vw;
+}
+
+.padding-top {
+    padding-top: 0vh;
+}
+
+.padding-bottom {
+    padding-bottom: 4vh;
+}
+
+.flexStart {
+    display: flex;
+    min-height: 100vh;
+}
+
+.profilenotificationbox {
+    position: fixed;
+    right: 0;
+    z-index: 1000;
+    /* padding-top: 3vh; */
+}
+
+.page {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.statecontent {
+    padding-top: 9vh;
+}
+
+@media screen and (max-width: 767px) {
+    .flexStart {
+        flex-direction: column;
+    }
+    .statecontent {
+        padding-top: 5vh;
+    }
+    .profilenotificationbox {
+        display: none;
+    }
+}
+
+.public {
+    padding-top: 5vh;
+}
+
+.common {
+    padding: 0 6vw;
+    padding-top: 14vh;
+}
+
+.spacebtw {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.nodata {
+    text-align: left;
+    color: var(--neutral600);
+    margin-top: 10px;
+    font-size: 15px;
+}

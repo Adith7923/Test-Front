@@ -1,0 +1,23 @@
+.selectField {
+  display: block;
+  width: 100%;
+  min-height: 57px;
+  border-radius: 9px;
+  fill: var(--neutral600);
+  font-weight: light;
+  background: transparent;
+  transition: border-color 0.3s;
+  margin-top: 9px;
+}
+
+.selectField:focus {
+  outline: none;
+}
+
+label {
+  letter-spacing: 0%;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--white);
+  word-wrap: break-word;
+}

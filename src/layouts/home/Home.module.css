@@ -1,0 +1,721 @@
+/* ------------------------------- Hero.css starts here ------------------------------- */
+
+.hero-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3vw;
+}
+
+.hero-containersection {
+  position: relative;
+}
+
+.hero-imagecontainer {
+  position: relative;
+}
+
+.hero-image1 {
+  position: absolute;
+  left: 30px;
+  top: -200px;
+}
+
+.hero-image2 {
+  position: absolute;
+  top: -16px;
+  left: -17px;
+}
+
+.hero-image3 {
+  position: absolute;
+  top: -60px;
+  left: 20px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hero-image4 {
+  position: absolute;
+  top: -22px;
+  left: 295px;
+  animation: spin 4s linear infinite;
+}
+
+.hero-image5 {
+  position: absolute;
+  top: 90px;
+  left: 200px;
+}
+
+.hero-maincontent {
+  font-weight: 900;
+  color: var(--white);
+  font-size: 96px;
+  letter-spacing: -3px;
+  text-transform: uppercase;
+  line-height: 86.875%;
+}
+
+.hero-textcolumn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.hero-maincontent2 {
+  font-weight: 900;
+  color: var(--primary-color);
+  font-size: 96px;
+  letter-spacing: -3px;
+  text-transform: uppercase;
+  line-height: 86.875%;
+}
+
+.hero-semicontent {
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  color: var(--white);
+}
+
+.hero-contentcolumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-buttondiv {
+  width: 25%;
+  min-width: 140px;
+}
+
+.hero-contentbuttondiv {
+  padding-top: 20vh;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+}
+
+.hero-statiunit {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-firsttwo {
+  border-right: 2px solid var(--white);
+  padding-right: 25px;
+}
+
+.hero-numbers {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.hero-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--primary-color);
+  line-height: 90%;
+}
+
+.hero-statidiv {
+  display: flex;
+  gap: 30px;
+}
+
+/* .hero-statistics {
+  display: flex;
+  justify-content: center;
+} */
+
+.hero-statistics {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 723px;
+}
+
+.hero-vision {
+  color: var(--white);
+}
+
+.hero-visioncontent {
+  /* color: var(--primary-color);
+   */
+   color: var(--neutral400);
+  font-size: 18px;
+  text-align: center;
+}
+
+@media (max-width: 1238px) and (min-width: 993px) {
+  .hero-image3 {
+    display: none;
+  }
+
+  .hero-image5 {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .hero-maincontent,
+  .hero-maincontent2 {
+    font-size: 64px;
+  }
+
+  .hero-semicontent {
+    font-size: 24px;
+  }
+
+  .hero-contentbuttondiv {
+    gap: 40px;
+  }
+
+  .hero-numbers {
+    font-size: 24px;
+  }
+
+  .hero-title {
+    font-size: 16px;
+  }
+
+  .hero-image4 {
+    position: absolute;
+    top: -22px;
+    left: 190px;
+  }
+
+  .hero-image5 {
+    position: absolute;
+    top: 60px;
+    left: 120px;
+  }
+
+  .hero-image3 {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 426px) {
+  .hero-maincontent,
+  .hero-maincontent2 {
+    font-size: 64px;
+  }
+
+  .hero-semicontent {
+    font-size: 24px;
+  }
+
+  .hero-contentbuttondiv {
+    padding-left: 6vw;
+    gap: 24px;
+  }
+
+  .hero-numbers {
+    font-size: 28px;
+  }
+
+  .hero-title {
+    font-size: 20px;
+  }
+
+  .hero-image1 {
+    left: 20px;
+    top: -180px;
+    transform: scale(0.7);
+  }
+
+  .hero-image2 {
+    top: -12px;
+    transform: scale(0.8);
+  }
+
+  .hero-image3 img {
+    display: none;
+  }
+
+  .hero-image5 {
+    display: none;
+  }
+
+  .hero-image4 {
+    position: absolute;
+    top: -22px;
+    left: 190px;
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: 425px) {
+  .hero-maincontent,
+  .hero-maincontent2 {
+    font-size: 56px;
+  }
+
+  .hero-container {
+    overflow: hidden;
+  }
+
+  .hero-semicontent {
+    font-size: 22px;
+  }
+
+  .hero-contentbuttondiv {
+    padding: 6vw;
+    gap: 24px;
+  }
+
+  .hero-numbers {
+    font-size: 24px;
+  }
+
+  .hero-title {
+    font-size: 20px;
+  }
+
+  .hero-contentcolumn {
+    gap: 10px;
+  }
+
+  .hero-contentbuttondiv {
+    padding-top: 20vh;
+    padding-left: 6vw;
+  }
+
+  .hero-statidiv {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-firsttwo {
+    border-right: none;
+    padding-right: 0px;
+  }
+
+  .hero-statiunit {
+    gap: 3px;
+  }
+
+  .hero-statidiv {
+    gap: 10px;
+  }
+
+  .hero-image2,
+  .hero-image3,
+  .hero-image5 {
+    display: none;
+  }
+
+  .hero-image4 {
+    position: absolute;
+    top: -200px;
+    left: 30%;
+    transform: translateX(-50%) scale(5);
+  }
+
+  .hero-image1 {
+    display: none;
+    overflow: hidden;
+    top: 360px;
+    left: 180px;
+    transform: rotate(60deg) scale(1.5);
+  }
+}
+
+/* ------------------------------- Hero.css ends here ------------------------------- */
+
+/* --------------------------------carousel.css starts here----------------------------- */
+
+.carousel-header {
+  text-align: center;
+}
+
+.starperformer .carousel-header,
+.testimonials .carousel-header {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.carousel-chunk {
+  display: flex;
+  justify-content: center;
+}
+
+.projects .carousel-chunk {
+  max-width: 916px;
+  gap: 320px;
+  margin-right: 280px;
+  margin-top: 10px;
+  margin-bottom: 25%;
+}
+
+.starperformer .carousel-chunk {
+  margin-right: 60px;
+  gap: 80px;
+  margin-bottom: 60px;
+}
+
+.testimonials .carousel-chunk {
+  gap: 15px;
+  margin-bottom: 60px;
+}
+
+.carousel-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  font-size: 24px;
+}
+
+.carousel-heading2 {
+  color: var(--white);
+  font-weight: 400;
+}
+
+.carousel-heading1 {
+  color: var(--primary-color);
+  font-weight: 600;
+  line-height: 90%;
+  margin-bottom: 25px;
+}
+
+.carousel-wrapper {
+  margin: 0 auto;
+}
+
+.projects .carousel-wrapper {
+  max-width: 1028px;
+}
+
+.starperformer .carousel-wrapper {
+  max-width: 1051px;
+}
+
+.testimonials .carousel-wrapper {
+  max-width: 1148px;
+}
+
+.projects {
+  padding-top: 5vw;
+}
+
+.carousel-header {
+  padding: 3vw;
+}
+
+@media (max-width: 767px) {
+  .starperformer .carousel-wrapper {
+    width: 302px;
+  }
+
+  .carousel-heading {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .testimonials .carousel-wrapper {
+    width: 650px;
+  }
+
+  .starperformer .carousel-wrapper {
+    width: 600px;
+  }
+
+  .projects .carousel-wrapper {
+    width: 750px;
+  }
+
+  .projects .carousel-chunk {
+    margin-bottom: 32%;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 767px) {
+  .projects .carousel-chunk {
+    max-width: 302px;
+    margin-bottom: 30vh;
+  }
+}
+
+@media (max-width: 425px) {
+  .projects .carousel-chunk {
+    max-width: 302px;
+    margin-bottom: 85%;
+  }
+}
+
+/* ------------------------------- carousel.css ends here---------------------------------- */
+
+/* ------------------------------- Partners.css starts here ------------------------------- */
+
+.partners-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4vw;
+}
+
+.partners-title {
+  font-size: 16px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.partners-icons {
+  display: flex;
+  gap: 75px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.partners-profileimage {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  padding: 10px;
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .partners-icons {
+    gap: 0px;
+  }
+
+  .partners-profileimage {
+    height: 80px;
+  }
+
+  .partners-title h1 {
+    font-size: 24px;
+  }
+}
+
+/* ------------------------------- Partners.css ends here ------------------------------- */
+
+/* ------------------------------- Header.css starts here ------------------------------- */
+
+.header-container {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--background);
+  padding: 0 10%;
+  box-shadow: 10px 11px 30px 0px rgba(89, 89, 89, 0.16);
+  position: fixed;
+  z-index: 5;
+}
+
+.header-title {
+  width: 130px;
+}
+
+.header-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  width: 45%;
+  height: 24px;
+  justify-content: center;
+}
+
+.header-menuitem {
+  color: var(--neutral200);
+  font-size: 15px;
+  line-height: 150%;
+  gap: 18px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.header-sidebaricon {
+  display: none;
+}
+
+.header-menuitemresponsive {
+  display: none;
+}
+
+.header-sidebar {
+  display: none;
+}
+
+.show {
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    width: 100%;
+    padding: 0 5%;
+    left: 0;
+    position: fixed;
+    z-index: 5px;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .header-menuitemresponsive {
+    cursor: pointer;
+    display: block;
+    color: var(--neutral200);
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 100%;
+    text-align: left;
+    text-decoration: none;
+  }
+
+  .header-menuresponsive {
+    position: fixed;
+    top: 80px;
+    padding-left: 30px;
+    height: 100vh;
+  }
+
+  .header-title {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .header-titleresponsive {
+    display: flex;
+    width: 100%;
+    align-items: start;
+    justify-content: start;
+    margin-left: 17px;
+    margin-top: 28px;
+  }
+
+  .button-resp {
+    width: 94px;
+    height: 48px;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--black);
+    padding: 14px 28px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 100px;
+    cursor: pointer;
+  }
+
+  .header-button {
+    position: absolute;
+    bottom: 136px;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .header-sidebaricon {
+    display: block;
+    margin-left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--neutral200);
+  }
+
+  .header-hamburger {
+    cursor: pointer;
+    font-size: 25px;
+    top: 26px;
+    color: var(--white);
+    position: fixed;
+    left: 25px;
+    transition: left 0.5s ease-out;
+  }
+
+  .header-crossicon {
+    cursor: pointer;
+    font-size: 25px;
+    color: var(--white);
+    top: 40px;
+    position: fixed;
+    padding-top: 3px;
+    right: 40px;
+  }
+
+  .header-sidebar {
+    position: fixed;
+    z-index: 5px;
+    top: 16px;
+    right: -800px;
+    height: 100vh;
+    width: 100%;
+    /* z-index: 999; */
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: left 0.5s ease;
+  }
+
+  .header-image {
+    width: 100px;
+    padding-bottom: 0px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .header-menu {
+    width: 95%;
+  }
+
+  .header-image {
+    width: 120px;
+    padding-bottom: 0px;
+  }
+}
+/* ------------------------------- Header.css ends here ------------------------------- */
+/* -------------------------------- cardlayout.css starts here ----------------------------------- */
+
+.cardlayout-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardlayout-heading {
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 22.4px;
+  letter-spacing: -0.41px;
+}
+
+/* -------------------------------- cardlayout.css ends here ----------------------------------- */

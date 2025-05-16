@@ -1,0 +1,175 @@
+.event-card {
+  width: 326px;
+  height: 65px;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.card-contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+}
+
+.event-date {
+  background-color: var(--primary-color);
+  width: 36px;
+  height: 36px;
+  margin-right: 18px;
+  margin-left: 0.2rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.date {
+  color: var(--black);
+  font-family: "Jost", "Sans-serif";
+  font-size: 14px;
+}
+
+.event-details {
+  display: flex;
+  flex-grow: 1;
+}
+
+.details-left {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  max-height: 36px;
+  height: max-content;
+  justify-content: space-between;
+  gap: 0.2rem;
+  align-items: flex-start;
+  margin-right: auto;
+}
+
+.details-right ul li {
+  margin: 0;
+  text-decoration: none;
+}
+
+.main {
+  font-size: 16px;
+  padding-right: 0.5rem;
+}
+
+.duration {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.details-right {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  max-height: 36px;
+  height: fit-content;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 0.28rem;
+}
+
+.sub {
+  font-size: 12px;
+}
+
+.sub a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.sub a:hover {
+  color: var(--primary-color);
+}
+
+.status {
+  font-size: 12px;
+}
+
+.upcoming {
+  color: rgb(255, 153, 36);
+}
+
+.due {
+  color: rgb(255, 38, 38);
+}
+
+.happening {
+  color: rgb(34, 139, 34);
+}
+
+.tba {
+  color: rgb(0, 255, 255);
+}
+
+.dark {
+  background-color: var(--neutral800);
+  color: var(--white);
+}
+
+/* @media only screen and (max-width: 767px) {
+  .event-card {
+    height: calc(65px * 0.8);
+    width: calc(326px * 0.8);
+    padding: calc(5px * 0.8);
+    margin: calc(10px * 0.8);
+    border-radius: calc(5px * 0.8);
+  }
+
+  .event-date {
+    width: calc(36px * 0.8);
+    height: calc(36px * 0.8);
+    margin-right: calc(16px * 0.8);
+    border-radius: calc(8px * 0.8);
+  }
+
+  .date {
+    font-size: calc(14px * 0.8);
+  }
+
+  .event-details {
+    gap: 1rem;
+  }
+
+  .details-top {
+    max-height: calc(36px * 0.8);
+    gap: 1.8rem;
+  }
+
+  .main {
+    font-size: calc(15px * 0.8);
+    padding-right: calc(10px * 0.8);
+  }
+
+  .hello {
+    font-size: calc(10px * 0.7);
+  }
+
+  .duration {
+    font-size: calc(10px * 0.8);
+  }
+
+  .sub {
+    font-size: calc(10px * 0.8);
+  }
+
+  .status {
+    font-size: calc(10px * 0.8);
+  }
+
+  .details-bottom {
+    max-height: calc(36px * 0.8);
+    margin-top: calc(-15px * 0.8);
+  } */
+/* } */

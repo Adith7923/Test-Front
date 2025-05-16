@@ -1,0 +1,88 @@
+.filter {
+  color: var(--white);
+  position: relative;
+  min-width: 75px;
+  width: fit-content;
+  max-width: 450px;
+  z-index: 500;
+}
+
+.filterClass:hover {
+  background-color: var(--primary-color);
+  color: var(--black);
+}
+
+.filterClass {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px;
+  gap: 7px;
+  cursor: pointer;
+  color: var(--white);
+  border-bottom: 1px solid var(--neutral500) !important;
+  min-width: 75px;
+  max-width: 450px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.selectedOption {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.iconAngleDown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.drop {
+  display: inline-flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  text-align: left;
+  background-color: var(--white);
+  border: 1px solid var(--neutral500);
+  cursor: pointer;
+  overflow-y: auto;
+  max-height: 250px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(82, 67, 67, 0);
+}
+
+.dropcontent:hover {
+  background-color: var(--primary-color);
+}
+
+.dropcontent {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--white);
+  color: var(--black);
+  border-bottom: 1px solid var(--neutral500);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 40px;
+}
+
+.dropcontent:last-child {
+  border-bottom: none;
+}
+
+.dropcontent a {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

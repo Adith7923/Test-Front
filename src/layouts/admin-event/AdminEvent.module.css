@@ -1,0 +1,202 @@
+/* ------------------------------- AddEvent.css starts here ------------------------------- */
+
+.addevent-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2%;
+  background-color: transparent;
+  color: var(--white);
+  gap: 17px;
+  padding: 50px;
+  border-radius: 40px;
+  filter: drop-shadow(5px 5px 21px rgba(0, 0, 0, 0.25));
+  backdrop-filter: blur(20px);
+  background: linear-gradient(
+      209deg,
+      rgba(255, 255, 255, 0.041),
+      rgba(0, 0, 0, 0.075)
+    ),
+    linear-gradient(198deg, rgba(0, 0, 0, 0.123), rgba(255, 255, 255, 0.068));
+}
+
+.eventform-eventtitle,
+.eventform-eventmode,
+.eventform-eventtype,
+.eventform-description,
+.eventform-location,
+.eventform-speaker {
+  margin-bottom: 2%;
+}
+
+.eventform-speakerscontainer{
+  margin-top: -2%;
+}
+
+.eventform-speaker-pair,
+.eventform-addspeaker-container{
+  margin-top: 2%;
+}
+
+.eventform-removeicon-final {
+  cursor: pointer;
+}
+.eventform-removeicon-final:hover {
+  color: var(--warning-color);
+  transition: color 0.3s;
+}
+
+.addevent-eventtitlediv {
+  width: 80%;
+}
+
+.addevent-eventmodediv {
+  width: 20%;
+}
+
+.addevent-eventtitlemode {
+  display: flex;
+  justify-content: space-between;
+  gap: 2%;
+}
+
+.addevent-datetimecontainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 2%;
+}
+
+.addevent-datetimecontainer .input-container {
+  flex: 1;
+}
+
+.addevent-datetime {
+  width: 100%;
+}
+
+.addevent-eventtitle,
+.addevent-eventmode,
+.addevent-eventtype,
+.addevent-description,
+.addevent-location,
+.addevent-speaker,
+.addevent-organizer {
+  margin-bottom: 28%;
+}
+
+.addevent-error {
+  margin-top: -12px;
+  color: var(--warning-color);
+  font-size: 0.875rem;
+}
+
+.addevent-eventtitlemode .addevent-error {
+  margin-top: 5px;
+}
+
+.addevent-datetimecontainer .addevent-error {
+  margin-top: 5px;
+}
+
+@media (min-width: 769) and (max-width: 992px) {
+  .addevent-form {
+    width: 100%;
+    padding: 30px;
+    border-radius: 30px;
+  }
+
+  .addevent-datetimecontainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .addevent-datetimecontainer .input-container {
+    flex: 1 1 48%;
+  }
+
+  .addevent-eventtitlemode {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .addevent-eventtitlemode .input-container {
+    flex: 1 1 48%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .addevent-form {
+    width: 100%;
+    padding: 30px;
+    border-radius: 30px;
+  }
+
+  .addevent-datetimecontainer {
+    flex-direction: column;
+    gap: 17px;
+  }
+
+  .addevent-datetimecontainer .input-container {
+    width: 100%;
+  }
+
+  .addevent-eventtitlemode {
+    flex-direction: column;
+    gap: 17px;
+  }
+
+  .addevent-eventtitlemode .input-container {
+    width: 100%;
+  }
+
+  .addevent-eventtitlediv {
+    width: 100%;
+  }
+
+  .addevent-eventmodediv {
+    width: 100%;
+  }
+
+  .addevent-buttoncontainer {
+    width: 100%;
+  }
+}
+
+/* ------------------------------- AddEvent.css ends here ------------------------------- */
+
+/* ------------------------ EventParticipantsList.css starts here ------------------------ */
+
+.eventparticipantslist-container {
+  width: 100%;
+}
+
+.eventparticipantslist-navbuttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 0px;
+}
+
+.eventparticipantslist-table {
+  margin-top: 0px;
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--neutral600) #ffffff00;
+}
+
+@media screen and (max-width: 768px) {
+  .eventparticipantslist-container {
+    width: 100%;
+  }
+
+  .eventparticipantslist-table {
+    width: 100%;
+  }
+
+  .eventparticipantslist-navbuttons > *:not(:last-child) {
+    display: none;
+  }
+}
+
+/* ------------------------ EventParticipantsList.css ends here ------------------------ */

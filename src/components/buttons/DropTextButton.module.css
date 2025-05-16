@@ -1,0 +1,26 @@
+.textbutton {
+  display: flex;
+  flex-direction: column;
+}
+.button {
+  font-size: 20px;
+}
+.buttontext{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    color: white;
+}
+.list{
+    padding-left: 15px;
+    padding-top: 5px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+.listitem{
+    display: flex;
+    gap: 8px;
+    flex-direction: row;
+    cursor: pointer;
+}

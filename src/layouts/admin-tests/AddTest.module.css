@@ -1,0 +1,54 @@
+.addTestContainer {
+  width: 100%;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: bold;
+color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.formRow {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  flex-wrap: wrap; /* for responsiveness */
+}
+
+.formRow > * {
+  flex: 1;
+  min-width: 200px; /* adjust based on your input design */
+}
+
+.fullWidthInput {
+  width: 100%;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.submitButton {
+  font-size: 18px;
+  padding: 10px 24px;
+  background-color: #5a643c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}

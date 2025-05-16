@@ -1,0 +1,68 @@
+.container {
+  padding: 2rem;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--white);
+}
+
+/* If you're still using .addButton (in case PrimaryButton fallback) */
+.addButton {
+  padding: 10px 16px;
+  background-color: #5a643c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.addButton:hover {
+  background-color: #4a532e;
+}
+
+.cardList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Media Queries for Responsive Layout */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .addButton {
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+  }
+}

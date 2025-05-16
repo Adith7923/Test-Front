@@ -1,0 +1,342 @@
+/* ------------------------------- Addevent.css starts here -------------------------------------- */
+
+.addevent-form {
+  width: 100%;
+  filter: drop-shadow(5px 5px 21px rgba(0, 0, 0, 0.25));
+  backdrop-filter: blur(20px);
+  background: linear-gradient(
+      209deg,
+      rgba(255, 255, 255, 0.041),
+      rgba(0, 0, 0, 0.075)
+    ),
+    linear-gradient(198deg, rgba(0, 0, 0, 0.123), rgba(255, 255, 255, 0.068));
+  background-blend-mode: lighten;
+  border-radius: 40px;
+  color: var(--white);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.addevent-head {
+  width: 100%;
+  left: 57px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--white);
+  overflow: hidden;
+  word-break: break-word;
+}
+
+.addevent-containerone {
+  width: 100%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.addevent-containerinput {
+  gap: 10px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.addevent-buttoncontainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addevent-error {
+  margin-top: -5px;
+  color: var(--warning-color);
+  font-size: 0.875rem;
+}
+
+@media (max-width: 767px) {
+  .addevent-form {
+    padding: 30px;
+    border-radius: 30px;
+  }
+}
+
+/* ------------------------------- Addevent.css ends here ---------------------------------------- */
+
+/* ------------------------------- Addcollege.css starts here ------------------------------- */
+
+.addcollege-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px;
+  padding: 50px;
+  filter: drop-shadow(5px 5px 21px rgba(0, 0, 0, 0.25));
+  background: linear-gradient(
+      209deg,
+      rgba(255, 255, 255, 0.041),
+      rgba(0, 0, 0, 0.075)
+    ),
+    linear-gradient(198deg, rgba(0, 0, 0, 0.123), rgba(255, 255, 255, 0.068));
+  backdrop-filter: blur(45px);
+}
+
+.addcollege-formgroup {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.addcollege-head {
+  font-size: 21px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.addcollege-error {
+  margin-top: 5px;
+  color: var(--warning-color);
+  font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+  .addcollege-container {
+    padding: 30px;
+    border-radius: 30px;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .addcollege-head {
+    font-size: 18px;
+  }
+
+  .addcollege-formgroup {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .addcollege-container {
+    padding: 30px;
+    border-radius: 30px;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .addcollege-head {
+    font-size: 16px;
+  }
+
+  .addcollege-formgroup {
+    gap: 15px;
+  }
+}
+
+/* --------------------------------- Addcollege.css ends here -------------------------------- */
+
+/* ------------------------------- Collegelist.css starts here ------------------------------- */
+
+.collegelist-container {
+  width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+      209deg,
+      rgba(255, 255, 255, 0.041),
+      rgba(0, 0, 0, 0.075)
+    ),
+    linear-gradient(198deg, rgba(0, 0, 0, 0.123), rgba(255, 255, 255, 0.068));
+  padding: 50px;
+  border-radius: 40px;
+  filter: drop-shadow(5px 5px 21px rgba(0, 0, 0, 0.25));
+  backdrop-filter: blur(45px);
+  overflow: scroll;
+}
+
+.collegelist-college {
+  font-size: 21px;
+  color: white;
+}
+
+.collegelist-table {
+  padding: 0%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--neutral600) #ffffff00;
+}
+
+.collegelist-container::-webkit-scrollbar {
+  width: 2px;
+  background-color: transparent;
+}
+
+.collegelist-container::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+}
+
+.collegelist-container::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.collegelist-container:hover {
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .collegelist-container {
+    padding: 30px;
+    border-radius: 30px;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .collegelist-college {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .collegelist-container {
+    padding: 30px;
+    border-radius: 30px;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .collegelist-college {
+    font-size: 16px;
+  }
+}
+
+/* ------------------------------- Collegelist.css ends here ------------------------------- */
+
+/* ------------------------------- Cardrow.css starts here ------------------------------- */
+
+.cardrow-skillcontainer {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.cardrow-skillcard {
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cardrow-viewnext {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.cardrow-padding{
+  padding: 20px 0px;
+}
+
+@media (max-width: 992px) {
+  .cardrow-skillcontainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+  }
+
+  .cardrow-skillcard {
+    padding: 20px;
+    height: fit-content;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardrow-skillcontainer {
+    flex-direction: column;
+    margin: 0%;
+  }
+
+  .cardrow-skillcard {
+    flex-direction: column;
+    padding: 10px;
+    height: fit-content;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .cardrow-skillcontainer {
+    flex-direction: column;
+    margin: 0%;
+    align-items: flex-start;
+  }
+
+  .cardrow-skillcard {
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+  }
+
+  .cardrow-viewnext {
+    margin-left: 70px;
+  }
+}
+
+.cardrow-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cardrow-pviewnext {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.cardrow-cardscontainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 21px;
+}
+
+.cardrow-primarycard {
+  flex-basis: 287px;
+  height: 193px;
+}
+
+@media (max-width: 992px) {
+  .cardrow-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .cardrow-cardscontainer {
+    justify-content: center;
+  }
+  .cardrow-skillcard {
+    justify-content: center;
+  }
+}
+
+/* ------------------------------- Cardrow.css ends here ------------------------------- */
+/* ------------------------------- EventsList.css starts here ------------------------------- */
+
+.eventslist-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+/* ------------------------------- ventsList.css ends here ------------------------------- */

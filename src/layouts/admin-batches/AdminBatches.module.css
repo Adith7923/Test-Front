@@ -1,0 +1,80 @@
+/* --------------------------- BatchOperation.css starts here -------------------------------- */
+
+.batchoperations-form {
+  width: 100%;
+  filter: drop-shadow(5px 5px 21px rgba(0, 0, 0, 0.25));
+  backdrop-filter: blur(45px);
+  background: var(--background);
+  background-blend-mode: lighten;
+  border-radius: 40px;
+  color: var(--white);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 25px;
+}
+
+.batchoperations-head {
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--white);
+  overflow: hidden;
+  word-break: break-word;
+}
+
+.batchoperations-buttoncontainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.batchoperations-containerone {
+  gap: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.batchoperations-containerinput {
+  width: 100%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.batchOperations-iconlabelcontainerinput {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.batchoperations-iconlabelcontainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: row;
+}
+
+.batchoperations-error {
+  margin-top: -15px;
+  color: var(--warning-color);
+  font-size: 0.875rem;
+}
+
+@media (max-width: 767px) {
+  .batchoperations-form {
+    padding: 30px;
+    border-radius: 30px;
+  }
+}
+
+/* ------------------------------- BatchOperation.css ends here -------------------------------- */

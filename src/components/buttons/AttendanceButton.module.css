@@ -1,0 +1,32 @@
+.button {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--white);
+    padding: 2px 10px;
+    border-radius: 6px;
+}
+
+.neutral {
+    background-color: var(--neutral700);
+}
+
+.present {
+    background-color: var(--primary-color);
+    color: var(--black);
+}
+
+.absent {
+    background-color: var(--neutral200);
+    color: var(--black);
+}
+
+@media (max-width: 767px) {
+    .button {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,154 @@
+.card {
+  display: flex;
+  width: 227px;
+  height: 228px;
+  border-radius: 19px;
+  background-color: var(--neutral800);
+  cursor: pointer;
+  padding: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  height: 169px;
+  width: 169px;
+}
+.attendancecontainer{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+}
+.attendance{
+ color: var(--neutral400);
+}
+.percentage{
+  color: var(--primary-color);
+}
+
+.image-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.delete-icon {
+  /* color: var(--primary-color); */
+  cursor: pointer;
+  display: none;
+  stroke-width: 1px;
+}
+.card:hover .delete-icon {
+  display: block; 
+  color:  var(--warning-color);
+}
+
+.card .student-image {
+  background-color: var(--white);
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+}
+
+.titles-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 213px;
+  height: 54px;
+  color: var(--neutral400);
+}
+
+.title1 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -0.41px;
+  margin-bottom: -2px;
+}
+
+.title2 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.41px;
+  margin-bottom: -2px;
+}
+
+.title3 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: -0.41px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  width: 187px;
+  gap: 2px;
+  color: var(--neutral600);
+}
+
+.email,
+.phone {
+  display: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: -0.41px;
+}
+
+.card:hover {
+  background-color: var(--white);
+}
+
+.card:hover .title1,
+.card:hover .title2,
+.card:hover .title3 ,
+.card:hover .percentage,
+.card:hover .attendance{
+  color: var(--neutral600);
+}
+
+.card:hover .contact-info,
+.card:hover .percentage{
+  color: var(--neutral800);
+}
+
+.card:hover .student-image {
+  background-color: var(--neutral800);
+}
+
+.card:hover .contact-info {
+  color: var(--neutral800);
+}
+
+.card:hover .student-image {
+  background-color: var(--neutral800);
+}
+
+@keyframes highlight {
+  0% {
+    transform: scale(1);
+    background-color: var(--white);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.card.highlight {
+  animation: highlight 3s ease-in-out;
+}

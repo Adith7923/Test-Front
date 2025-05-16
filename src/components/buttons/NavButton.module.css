@@ -1,0 +1,28 @@
+.navButton {
+  display: flex;
+  align-items: center;
+}
+
+.backArrow {
+  font-size: 24px;
+  color: var(--white);
+  cursor: pointer;
+  margin-left: -8px;
+}
+
+.backArrow:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.pageName {
+  font-size: 18px;
+  margin-left: 1px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.pageName:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}

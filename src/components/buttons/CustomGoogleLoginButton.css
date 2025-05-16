@@ -1,0 +1,23 @@
+.custom-google-login-button {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 5px;
+}
+
+.custom-google-login-button:hover {
+  background-color: var(--white);
+}
+
+.full-width {
+  width: 100%;
+}

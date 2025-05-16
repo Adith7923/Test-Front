@@ -1,0 +1,72 @@
+.card {
+  width: 274px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  background-color: var(--neutral800);
+  box-sizing: border-box;
+}
+
+.innerBox {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 16px;
+  width: 226px;
+  height: calc(100% - 14px);
+  border-right: 3px solid transparent;
+  opacity: 1;
+  border-color: var(--primary-color);
+  position: relative;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.408px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  color: var(--white);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.subtitle {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  text-align: left;
+  margin: 0px;
+  color: var(--white);
+  height: 22px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.closeIcon {
+  color: var(--white);
+  margin: 4.5px 14px;
+  width: 35px;
+  height: 35px;
+}
+
+.closeIcon:hover {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.iconContainer{
+  display: flex;
+  align-items: center;
+}

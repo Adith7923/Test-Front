@@ -1,0 +1,61 @@
+/* TextButton.module.css */
+.textbutton {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 3px;
+}
+
+.textbutton:hover .text,
+.textbutton:hover .icon {
+  color: var(--primary-color);
+}
+
+.text {
+  font-size: 16px;
+  color: var(--white);
+}
+
+.icon {
+  color: var(--white);
+  margin-top: 2px;
+  font-size: 14px;
+}
+
+.dtext {
+  font-size: 16px;
+  color: var(--warning-color);
+}
+
+.dicon {
+  margin-top: 2px;
+  color: var(--warning-color);
+}
+
+.redHover .text,
+.redHover .icon,
+.redHover .dtext,
+.redHover .dicon {
+  color: red;
+}
+
+.redHover:hover .text,
+.redHover:hover .icon,
+.redHover:hover .dtext,
+.redHover:hover .dicon {
+  color: white;
+}
+
+.redSpeaker .text,
+.redSpeaker .icon,
+.redSpeaker .dtext,
+.redSpeaker .dicon {
+  color: var(--white);
+}
+
+.redSpeaker:hover .text,
+.redSpeaker:hover .icon,
+.redSpeaker:hover .dtext,
+.redSpeaker:hover .dicon {
+  color:  var(--warning-color);  
+}

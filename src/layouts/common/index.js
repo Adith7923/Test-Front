@@ -1,0 +1,16 @@
+export { default as BasicDetails } from "./components/BasicDetails";
+export { default as CombinedSkillForm } from "./components/CombinedSkillForm";
+export { default as DeleteBox } from "./components/DeleteBox";
+export { default as DataView } from "./components/DataView";
+export { default as Action } from "./components/Action";
+export { default as Greeting } from "./components/Greeting";
+export { default as AddUser } from "./components/AddUser";
+export { default as UpdateSingleField } from "./components/UpdateSingleField";export { default as SideBar } from "./components/SideBar";
+export { default as Footer } from "./components/Footer";
+export { default as EventsDescription } from "./components/EventsDescription";
+export { default as QualificationForm } from "./components/QualificationForm";
+export { default as EventMenus } from "./components/EventMenus";
+export { default as UserProfileInfo } from "./components/UserProfileInfo";
+export { default as Education } from "./components/Education";
+export { default as AboutMe } from "./components/AboutMe";
+export { default as ProjectsDetails } from "./components/ProjectsDetails";

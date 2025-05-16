@@ -1,0 +1,39 @@
+.event-status {
+  width: 102px;
+  height: 35px;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 8px 14px;
+  border-bottom: 2px solid var(--neutral700);
+  font-size: 16px;
+  flex-wrap: wrap;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+  flex-wrap: wrap;
+}
+
+.event-status:hover {
+  background-color: var(--primary-color);
+  color: black;
+}
+
+.event-status:active {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.event-status.active {
+  background-color: var(--white); 
+  color: var(--black); 
+}
+
+@media (max-width: 767px) {
+  .event-status {
+    font-size: 14px;
+    width: 100px;
+  }
+}

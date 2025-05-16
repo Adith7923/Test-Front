@@ -1,0 +1,2380 @@
+/* ------------------------------- SideBar.css starts here ------------------------------- */
+
+.sidebar {
+  background-color: #494949;
+  width: 250px;
+  height: 100vh;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  z-index: 800;
+  transition: left 0.8s ease-in-out;
+}
+
+.sidebarcontainer {
+  width: 250px;
+  height: 100vh;
+}
+
+.sidebar-headerresp {
+  width: 250px;
+}
+
+.sidebar-headingin img {
+  font-size: 32px;
+  line-height: 35px;
+  padding-top: 30px;
+  padding-left: 14px;
+}
+
+.sidebar-list {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.sidebar-toggle {
+  display: none;
+}
+
+.sidebar-headerbutton {
+  position: absolute;
+  left: 32px;
+}
+
+.sidebar-card {
+  display: none;
+}
+
+.sidebar-content {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    left: -820px;
+    width: 100%;
+  }
+  .sidebar-headingin img {
+    display: flex;
+    line-height: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    width: 120px;
+    height: auto;
+    align-items: center;
+  }
+  .sidebar-headingout img {
+    display: flex;
+    justify-content: center;
+    line-height: 0px;
+    width: 120px;
+    height: auto;
+    align-items: center;
+  }
+  .sidebar-headerresp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #494949;
+    height: 65px;
+    padding: 10px;
+    width: 100%;
+  }
+  .sidebar-headercontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+  }
+  .sidebar-headercontainerout {
+    display: flex;
+    flex-direction: row;
+  }
+  .sidebar-toggle {
+    display: flex;
+    cursor: pointer;
+  }
+  .sidebar-list {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    gap: 0px;
+  }
+  .sidebar-hamburger {
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+  }
+  .sidebar-crossicon {
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+  }
+  .sidebar.show {
+    left: 0;
+  }
+  .sidebar-card {
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+    justify-content: center;
+    padding-left: 10px;
+  }
+  .sidebar-headerbutton {
+    position: absolute;
+    bottom: 120px;
+    left: 34px;
+  }
+  .sidebarcontainer {
+    width: 100%;
+    height: 65px;
+  }
+}
+
+@media (max-width: 1113px) and (min-width: 768px) {
+  .sidebar {
+    width: 190px;
+  }
+  .sidebar-headingin img {
+    width: 120px;
+    height: auto;
+  }
+  .sidebarcontainer {
+    width: 190px;
+  }
+}
+
+/* ------------------------------- SideBar.css ends here ------------------------------- */
+
+/* ------------------------------- Footer.css starts here ------------------------------- */
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  padding-top: 26px;
+}
+
+.footer-containerleft {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.footer-footerline {
+  width: 100%;
+  height: 4px;
+}
+
+.footer-line {
+  height: 2px;
+  margin: 0 4vw;
+  border-radius: 25px;
+  background: var(--neutral800);
+}
+
+.footer-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: var(--background);
+}
+
+.footer-logobox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-logoboxleft {
+  padding-top: 26px;
+  padding-left: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.footer-img {
+  height: 35px;
+  width: 163px;
+}
+
+.footer-quote {
+  color: var(--white);
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.footer-quoteleft {
+  color: var(--white);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: left;
+}
+
+.footer-footerbox {
+  width: 100%;
+  height: 8px;
+  background: var(--primary-color);
+}
+
+.footer-bottumbox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.footer-copyrightcontent {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+
+.footer-copyrightcontent2 {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration-line: underline;
+  padding-bottom: 30px;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  color: var(--white);
+}
+
+.footer-copyrightleft {
+  padding-left: 5vw;
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+  color: var(--white);
+}
+
+@media (max-width: 767px) {
+  .footer-copyrightcontent {
+    color: var(--white);
+    font-size: 10px;
+    font-weight: 400;
+  }
+  .footer-copyrightcontent2 {
+    font-size: 10px;
+  }
+  .footer-copyright,
+  .footer-copyrightleft {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-quote {
+    padding: 10px;
+    font-size: 24px;
+  }
+  .footer-quoteleft {
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+  }
+  .footer-containerleft {
+    padding-left: 0px;
+    align-items: center;
+  }
+  .footer-logoboxleft {
+    padding-left: 0px;
+    align-items: center;
+    padding: 0px 3vw;
+  }
+  .footer-copyrightleft {
+    padding-left: 0px;
+    justify-content: center;
+  }
+}
+
+/* ------------------------------- Footer.css ends here ------------------------------- */
+
+/* -------------------------------- Greeting.css starts here ----------------------------------- */
+
+.common-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: white;
+}
+
+.common-welcome {
+  font-weight: 500;
+  font-size: 28px;
+  letter-spacing: -0.41px;
+}
+
+.common-header {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.59px;
+  display: flex;
+  gap: 100px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.common-greenlink {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 25px;
+}
+
+.common-greenlink a {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+@media (max-width: 767px) {
+  .common-header {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .common-greenlink {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-end;
+  }
+}
+
+/* -------------------------------- Greeting.css ends here ----------------------------------- */
+
+/* ------------------------------- basicdetails.css starts here ---------------------------------- */
+
+.basicdetails-form {
+  width: 100%;
+  filter: drop-shadow(5px 5px 21px rgba(0, 0, 0, 0.25));
+  backdrop-filter: blur(20px);
+  background: linear-gradient(
+      209deg,
+      rgba(255, 255, 255, 0.041),
+      rgba(0, 0, 0, 0.075)
+    ),
+    linear-gradient(198deg, rgba(0, 0, 0, 0.123), rgba(255, 255, 255, 0.068));
+  background-blend-mode: lighten;
+  border-radius: 40px;
+  color: var(--white);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.basicdetails-head {
+  width: 100%;
+  left: 57px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--white);
+  overflow: hidden;
+  word-break: break-word;
+}
+
+.basicdetails-containerone {
+  width: 100%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.basicdetails-containerinput-out {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.basicdetails-containerinput-inter {
+  gap: 7px;
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.basicdetails-containerinput-in {
+  gap: 6px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 7px;
+  width: 100%;
+}
+
+.basicdetails-icontext {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 12px;
+  width: 100%;
+}
+
+.basicdetails-buttoncontainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 17px;
+}
+
+.basicdetails-error {
+  color: var(--warning-color);
+  font-size: 0.875rem;
+}
+
+.basicdetails-links {
+  width: 32%;
+}
+
+.basicdetails-containerinput-links {
+  gap: 6px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.basicdetails-containerinput-links .basicdetails-error {
+  margin-top: 5px;
+}
+
+.basicdetails-containerinput-out .basicdetails-error {
+  margin-top: -15px;
+}
+
+@media (max-width: 767px) {
+  .basicdetails-form {
+    padding: 30px;
+    border-radius: 30px;
+  }
+  .basicdetails-containerinput-links {
+    flex-direction: column;
+  }
+  .basicdetails-links {
+    width: 100%;
+  }
+}
+
+/* ------------------------------- basicdetails.css ends here ------------------------------------ */
+
+/* ------------------------------- combinedskillform.css starts here --------------------------- */
+
+.combinedskillform-form {
+  width: 100%;
+  filter: drop-shadow(5px 5px 21px rgba(0, 0, 0, 0.25));
+  backdrop-filter: blur(20px);
+  background: linear-gradient(
+      209deg,
+      rgba(255, 255, 255, 0.041),
+      rgba(0, 0, 0, 0.075)
+    ),
+    linear-gradient(198deg, rgba(0, 0, 0, 0.123), rgba(255, 255, 255, 0.068));
+  background-blend-mode: lighten;
+  border-radius: 40px;
+  color: var(--white);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  overflow: hidden;
+}
+
+.combinedskillform-head {
+  width: 100%;
+  left: 57px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--white);
+  overflow: hidden;
+  word-break: break-word;
+}
+
+.combinedskillform-containerone {
+  width: 100%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.combinedskillform-containerinput {
+  width: 100%;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.combinedskillform-buttoncontainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.combinedskillform-message {
+  font-size: 14px;
+  color: var(--white);
+}
+
+.combinedskillform-skillname {
+  color: var(--primary-color);
+  margin-left: 5px;
+}
+
+.combinedskillform-allheading {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+  word-break: break-word;
+}
+
+.combinedskillform-text {
+  font-size: 12px;
+  left: 57px;
+}
+
+@media (max-width: 767px) {
+  .combinedskillform-form {
+    padding: 30px;
+    border-radius: 30px;
+  }
+}
+
+.combinedskillform-error {
+  margin-top: -5px;
+  color: var(--warning-color);
+  font-size: 0.875rem;
+}
+
+/* ------------------------------- combinedskillform.css ends here --------------------------- */
+
+/* -------------------------------- Action.css starts here -------------------------------- */
+
+.common-count {
+  color: var(--white);
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.common-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.common-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.common-bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.common-right {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.common-heading {
+  color: var(--primary-color);
+  font-size: 24px;
+  font-weight: 600;
+  align-items: flex-end;
+}
+
+.common-filter {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.common-search {
+  width: 33%;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .common-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  .common-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .common-heading {
+    font-size: 18px;
+  }
+  .common-search.common-large,
+  .common-search.common-medium,
+  .common-search.common-small {
+    width: 100%;
+  }
+  .common-buttons {
+    width: 100%;
+  }
+  .common-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 767px) {
+  .common-content {
+    padding: 0;
+    /* gap: 20px; */
+  }
+  .common-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .common-heading {
+    font-size: 18px;
+    order: 1;
+  }
+  .common-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .common-search {
+    width: 100%;
+    order: 2;
+  }
+  .common-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    order: 3;
+  }
+  .common-reset {
+    width: 100%;
+  }
+  .common-buttons {
+    width: 100%;
+    order: 4;
+  }
+  .common-deletebutton {
+    width: 100%;
+  }
+  .common-filter {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+  }
+}
+
+/* --------------------------------- Action.css ends here --------------------------------- */
+
+/* ------------------------------- DeleteBox.css starts here ------------------------------- */
+
+.deletebox-box {
+  max-width: 100%;
+  border-radius: 40px;
+  filter: drop-shadow(5px 5px 21px rgba(0, 0, 0, 0.25));
+  backdrop-filter: blur(20px);
+  background: linear-gradient(
+      209deg,
+      rgba(255, 255, 255, 0.041),
+      rgba(0, 0, 0, 0.075)
+    ),
+    linear-gradient(198deg, rgba(0, 0, 0, 0.123), rgba(255, 255, 255, 0.068));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  gap: 10px;
+}
+
+.deletebox-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.deletebox-title {
+  color: var(--white);
+  width: 100%;
+  font-weight: 500;
+  font-size: 21px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.deletebox-message {
+  color: var(--white);
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.deletebox-button {
+  width: 100%;
+  max-width: 375px;
+  text-align: center;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .deletebox-box {
+    padding: 35px;
+    border-radius: 30px;
+  }
+}
+
+/* ------------------------------- DeleteBox.css ends here ------------------------------- */
+
+/* ------------------------------- DataView.css starts here ------------------------------- */
+
+.dataview-togglecontainer {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 24px;
+}
+
+.dataview-togglebutton {
+  color: var(--white);
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  cursor: pointer;
+  margin: 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dataview-togglebutton:hover {
+  color: var(--primary-color);
+}
+
+.dataview-togglebutton.selected {
+  color: var(--primary-color);
+}
+
+.dataview-icons {
+  font-size: 24px;
+}
+
+.dataview-cardscontainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 21px;
+}
+
+.dataview-tablecontainer {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--neutral600) #ffffff00;
+}
+
+.dataview-pagination {
+  margin-top: 24px;
+}
+
+.dataview-invisible {
+  visibility: hidden;
+}
+
+.dataview-eventcard {
+  flex-basis: 336px;
+  height: 75px;
+}
+
+.dataview-primarycard {
+  flex-basis: 287px;
+  height: 193px;
+}
+
+.dataview-profilecard {
+  flex-basis: 227px;
+  height: 228px;
+}
+
+.dataview-skillbatchcardskill {
+  flex-basis: 232px;
+  height: 151px;
+}
+
+.dataview-skillbatchcardbatch {
+  flex-basis: 282px;
+  height: 168px;
+}
+
+.dataview-skillcard {
+  flex-basis: 274px;
+  height: 74px;
+}
+
+.dataview-skilluser {
+  flex-basis: 263px;
+  height: 168px;
+}
+
+.dataview-studentcard {
+  flex-basis: 230px;
+  height: 230px;
+}
+
+.dataview-testimonialcard {
+  flex-basis: 253px;
+  height: 321px;
+}
+
+.dataview-skilluser {
+  flex-basis: 262px;
+  height: 186px;
+}
+
+.dataview-qualificationcard {
+  flex-basis: 249px;
+  height: 199px;
+}
+
+.dataview-collegecard {
+  flex-basis: 285px;
+  height: 187px;
+}
+
+.dataview-viewinactive {
+  padding-top: 20px;
+  color: var(--primary-color);
+}
+
+@media (max-width: 767px) {
+  .dataview-cardscontainer {
+    justify-content: center;
+  }
+}
+
+/* ------------------------------- DataView.css ends here ------------------------------- */
+
+/* ------------------------------- addstudent.css starts here --------------------------------- */
+
+.addstudent-form {
+  width: 100%;
+  filter: drop-shadow(5px 5px 21px rgba(0, 0, 0, 0.25));
+  backdrop-filter: blur(20px);
+  background: linear-gradient(
+      209deg,
+      rgba(255, 255, 255, 0.041),
+      rgba(0, 0, 0, 0.075)
+    ),
+    linear-gradient(198deg, rgba(0, 0, 0, 0.123), rgba(255, 255, 255, 0.068));
+  background-blend-mode: lighten;
+  border-radius: 40px;
+  color: var(--white);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.addstudent-head {
+  width: 100%;
+  left: 57px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--white);
+  overflow: hidden;
+  word-break: break-word;
+}
+
+.addstudent-containerone {
+  width: 100%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.addstudent-containerinput {
+  gap: 10px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.addstudent-buttoncontainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addstudent-error {
+  margin-top: -5px;
+  color: var(--warning-color);
+  font-size: 0.875rem;
+}
+
+.addstudent-allheading {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+  word-break: break-word;
+}
+
+.addstudent-message {
+  font-size: 14px;
+  color: var(--white);
+}
+
+.addstudent-skillname {
+  color: var(--primary-color);
+  margin-left: 5px;
+}
+
+@media (max-width: 767px) {
+  .addstudent-form {
+    padding: 30px;
+    border-radius: 30px;
+  }
+}
+
+/* ------------------------------- addstudent.css ends here --------------------------------- */
+
+/* ------------------------------- AddUser.css starts here ------------------------------- */
+
+.adduser-head {
+  font-size: 21px;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.adduser-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px;
+  padding: 50px;
+  filter: drop-shadow(5px 5px 21px rgba(0, 0, 0, 0.25));
+  backdrop-filter: blur(45px);
+  background: linear-gradient(
+      209deg,
+      rgba(255, 255, 255, 0.041),
+      rgba(0, 0, 0, 0.075)
+    ),
+    linear-gradient(198deg, rgba(0, 0, 0, 0.123), rgba(255, 255, 255, 0.068));
+}
+
+.adduser-field {
+  padding: 0%;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  justify-content: space-between;
+}
+
+.adduser-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.adduser-name {
+  width: 50%;
+}
+
+.adduser-error {
+  color: var(--warning-color);
+  font-size: 0.875rem;
+}
+
+.adduser-form .adduser-error {
+  margin-top: -20px;
+}
+
+.adduser-name .adduser-error {
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .adduser-container {
+    padding: 30px;
+    border-radius: 30px;
+    width: 100%;
+    height: fit-content;
+  }
+  .adduser-head {
+    font-size: 18px;
+  }
+  .adduser-form {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .adduser-container {
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    height: fit-content;
+  }
+  .adduser-head {
+    font-size: 16px;
+  }
+  .adduser-form {
+    gap: 15px;
+  }
+  .adduser-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .adduser-name {
+    width: 100%;
+  }
+}
+
+/* -------------------------------- AddUser.css ends here -------------------------------- */
+
+/* -------------------------------- Modal.css starts here --------------------------------- */
+
+.modal-modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  overflow-y: auto;
+  backdrop-filter: blur(4px);
+}
+
+.modal-modalContent {
+  position: relative;
+  max-height: 90%;
+  overflow: initial;
+  outline: transparent;
+}
+
+.modal-modalContent::-webkit-scrollbar {
+  width: 0px;
+}
+
+.modal-width-small {
+  width: 549px;
+}
+
+.modal-width-medium {
+  width: 704px;
+}
+
+.modal-width-large {
+  width: 914px;
+}
+
+@media (max-width: 480px) {
+  .modal-modalContent {
+    padding: 0 15px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 980px) {
+  .modal-modalContent {
+    padding: 0 35px;
+  }
+}
+
+/* -------------------------------- Modal.css ends here ----------------------------------- */
+
+/* -------------------------------- ShowCards.css starts here --------------------------------- */
+
+.showcards-total {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.showcards-sidebar {
+  width: 250px;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  background-color: grey;
+}
+
+.showcards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.showcards-heading {
+  color: var(--primary-color);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 22.4px;
+  letter-spacing: -0.41px;
+  align-items: flex-end;
+}
+
+/* -------------------------------- ShowCards.css ends here ----------------------------------- */
+
+/*----------------------------------batchsearch.css starts here-----------------------------------*/
+
+.batchsearch-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.batchsearch-top {
+  display: flex;
+  padding-bottom: 16px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.batchsearch-textbutton {
+  display: flex;
+  gap: 10px;
+}
+
+.batchsearch-bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.batchsearch-right {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.batchsearch-heading {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  align-items: flex-end;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.batchsearch-filter {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.batchsearch-search {
+  width: 33%;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .batchsearch-top {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .batchsearch-heading {
+    display: flex;
+    width: 100%;
+  }
+  .batchsearch-textbutton {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .batchsearch-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .batchsearch-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .batchsearch-search {
+    width: 100%;
+  }
+  .batchsearch-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .batchsearch-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+  .batchsearch-top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 0;
+  }
+  .batchsearch-textbutton {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0px 7px;
+  }
+  .batchsearch-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .batchsearch-heading {
+    font-size: 18px;
+  }
+  .batchsearch-search {
+    width: 100%;
+  }
+  .batchsearch-button {
+    width: 100%;
+  }
+  .batchsearch-right {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+/*---------------------------------batchsearch.css ends here-----------------------------------*/
+
+/* ------------------------------- EventsDescription.css starts here ------------------------------- */
+
+.eventsdescription-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.eventsdescription-topleft {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.eventsdescription-backbutton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.eventsdescription-backbutton:hover {
+  background-color: #0056b3;
+}
+
+.eventsdescription-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.eventsdescription-headingcontent h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.eventsdescription-contentheading {
+  font-size: 36px;
+}
+
+.eventsdescription-texted {
+  display: flex;
+  flex-direction: column;
+}
+
+.eventsdescription-text {
+  color: var(--white);
+  font-size: 20px;
+}
+
+.eventsdescription-texts {
+  color: var(--white);
+}
+
+.eventsdescription-container h2 {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.eventsdescription-container h3 {
+  color: var(--primary-color);
+}
+
+.eventsdescription-description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.eventsdescription-desc {
+  color: var(--white);
+}
+
+.eventsdescription-date {
+  color: var(--white);
+}
+
+.eventsdescription-gap {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.eventsdescription-time {
+  color: var(--white);
+}
+
+.eventsdescription-timer {
+  display: flex;
+  flex-direction: column;
+}
+
+.eventsdescription-venue {
+  color: var(--white);
+}
+
+.eventsdescription-address {
+  color: var(--white);
+}
+
+.eventsdescription-align {
+  display: flex;
+  flex-direction: row;
+  gap: 10vw;
+}
+
+.eventsdescription-speaker {
+  color: var(--white);
+}
+
+.eventsdescription-navbutton {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.eventsdescription-primarybutton {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+
+.eventsdescription-buttondiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.eventsdescription-primarydiv {
+  display: flex;
+  justify-content: right;
+  gap: 20px;
+  top: 20px;
+  left: 20px;
+}
+
+.eventsdescription-buttondiv2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 480px) {
+  .eventsdescription-hiddenbutton {
+    display: none;
+  }
+  .eventsdescription-topleft {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .eventsdescription-align {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .eventsdescription-primarydiv {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .eventsdescription-buttondiv2 {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .eventsdescription-topleft {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .eventsdescription-align {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .eventsdescription-primarydiv {
+    position: static;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .eventsdescription-topleft {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .eventsdescription-align {
+    flex-direction: row;
+    gap: 50px;
+  }
+  .eventsdescription-primarydiv {
+    position: static;
+    justify-content: flex-end;
+  }
+}
+
+/* ------------------------------- EventsDescription.css ends here ------------------------------- */
+
+/* ------------------------------- addprofilelink.css starts here ---------------------------- */
+
+.addprofilelink-form {
+  width: 100%;
+  filter: drop-shadow(5px 5px 21px rgba(0, 0, 0, 0.25));
+  backdrop-filter: blur(45px);
+  background: var(--background);
+  background-blend-mode: lighten;
+  border-radius: 40px;
+  color: var(--white);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.addprofilelink-containerone {
+  width: 100%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.addprofilelink-head {
+  width: 100%;
+  left: 57px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--white);
+  overflow: hidden;
+  word-break: break-word;
+}
+
+.addprofilelink-containerinput {
+  width: 100%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.addprofilelink-buttoncontainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .addprofilelink-form {
+    padding: 30px;
+    border-radius: 30px;
+  }
+}
+
+/* ------------------------------- addprofilelink.css ends here ---------------------------- */
+
+/* ------------------------------- EventMenus.css starts here ------------------------------- */
+
+.eventmenus-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.eventmenus-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.eventmenus-title {
+  color: var(--primary-color);
+  font-size: 28px;
+  flex: 1;
+  text-align: left;
+}
+
+.eventmenus-explorebutton {
+  width: 18%;
+  height: 34px;
+  text-align: right;
+}
+
+.eventmenus-tabbutton {
+  display: flex;
+  margin-top: 30px;
+}
+
+.eventmenus-searchbar {
+  width: 35%;
+}
+
+@media (max-width: 767px) {
+  .eventmenus-head {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .eventmenus-title {
+    font-size: 23px;
+    text-align: left;
+  }
+  .eventmenus-explorebutton {
+    width: 53%;
+  }
+  .eventmenus-tabbutton {
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 0px;
+  }
+  .eventmenus-searchbar {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .eventmenus-explorebutton {
+    width: 33%;
+  }
+  .eventmenus-searchbar {
+    width: 100%;
+  }
+}
+
+/* ------------------------------- EventMenus.css ends here ------------------------------- */
+
+/* ------------------------------- QualificationForm.css starts here ------------------------------- */
+
+.qualification-form-form {
+  width: 100%;
+  filter: drop-shadow(5px 5px 21px rgba(0, 0, 0, 0.25));
+  backdrop-filter: blur(20px);
+  background: linear-gradient(
+      209deg,
+      rgba(255, 255, 255, 0.041),
+      rgba(0, 0, 0, 0.075)
+    ),
+    linear-gradient(198deg, rgba(0, 0, 0, 0.123), rgba(255, 255, 255, 0.068));
+  background-blend-mode: lighten;
+  padding: 50px;
+  border-radius: 40px;
+  color: var(--white);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.qualification-form-datebox {
+  width: 48.75%;
+}
+
+.qualification-form-startdate-enddate {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.qualification-form-head {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+
+.qualification-form-button {
+  padding-top: 10px;
+}
+
+.qualification-form-error {
+  color: var(--warning-color);
+  font-size: 0.875rem;
+  margin-top: -10px;
+}
+
+.qualification-form-startdate-enddate .qualification-form-error {
+  margin-top: 1px;
+}
+
+@media screen and (max-width: 767px) {
+  .qualification-form-startdate-enddate {
+    flex-direction: column;
+    gap: 17px;
+  }
+  .qualification-form-form {
+    padding: 30px;
+    border-radius: 40px;
+  }
+  .qualification-form-datebox {
+    width: 100%;
+  }
+  .qualification-form-form {
+    padding: 30px;
+    border-radius: 30px;
+  }
+}
+
+/* --------------------------------------------------- QualificationForm.css ends here ----------------------------------------------------------------------- */
+
+/*-----------------------------------------------------User profile layout css begins here------------------------------------------------------------------------*/
+
+.userprofile-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.userprofile-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.userprofile-title1 {
+  color: var(--primary-color);
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.userprofile-user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.userprofile-details-section {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.userprofile-basic-info {
+  display: flex;
+  align-items: center;
+}
+
+.userprofile-name {
+  font-weight: 600;
+  font-size: 20px;
+  max-width: 9rem;
+  text-wrap: wrap;
+  line-height: 19px;
+}
+
+.userprofile-student-id {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.userprofile-college {
+  font-weight: 400;
+  font-size: 16px;
+  max-width: 9rem;
+  text-wrap: wrap;
+}
+
+.userprofile-dob {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.userprofile-profile-picture {
+  margin-right: 1.5rem;
+  display: flex;
+}
+
+.userprofile-controlbuttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.userprofile-controlbutton {
+  margin: 0.3rem;
+}
+
+.userprofile-info-text {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.userprofile-bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--white);
+  margin-left: 3rem;
+  gap: 0.2rem;
+}
+
+.userprofile-email {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.userprofile-phone {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.userprofile-social-links {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.userprofile-social-links:hover {
+  color: var(--primary-color);
+}
+
+.userprofile-linkedin {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.userprofile-github {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.userprofile-address {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+/*----------------------------------------------------------User profile layout css ends here-----------------------------------------------------------------*/
+
+/*-----------------------------------------------------------Education layout css begins here-----------------------------------------------------------------*/
+
+.education-container {
+  padding-bottom: 20px;
+}
+
+.education-qualification {
+  display: flex;
+  flex-direction: column;
+}
+
+.education-qualification-button {
+  margin: 0.3rem;
+}
+
+.education-qualification-head {
+  display: flex;
+  align-items: center;
+}
+
+.education-qualification-name {
+  margin-right: auto;
+}
+
+.education-qualification-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.education-qualification-instance {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  list-style-type: decimal;
+  position: relative;
+}
+
+.education-qualification-mod-buttons {
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  align-items: center;
+  transition:
+    opacity 0.3s,
+    visibility 0.3s;
+  position: absolute;
+  right: 0;
+}
+
+.education-qualification-instance:hover .education-qualification-mod-buttons {
+  opacity: 1;
+  visibility: visible;
+}
+
+.education-title2 {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+.education-qualifications-list {
+  color: var(--white);
+  margin-left: 0.2rem;
+}
+
+.education-education {
+  margin-bottom: 1rem;
+  margin-right: auto;
+  margin-left: 0.2rem;
+  color: var(--white);
+}
+
+.education-list-box {
+  margin-left: 0.2rem;
+  list-style-type: decimal;
+  padding-bottom: 1rem;
+}
+
+.education-no-qualifications {
+  text-align: left;
+  color: var(--neutral600);
+}
+
+/*---------------------------------------------------Education layout css ends here--------------------------------------------------------------------------*/
+
+/*-------------------------------------------------Media queries for user profile starts here--------------------------------------------------------------------*/
+
+@media only screen and (max-width: 767px) {
+  .userprofile-basic-info {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .userprofile-details-section {
+    flex-direction: column;
+  }
+  .userprofile-bio {
+    align-items: flex-start;
+    margin: 0;
+  }
+  .userprofile-title {
+    margin-bottom: 1.5rem;
+  }
+  .userprofile-profile-picture {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  .userprofile-basic-info {
+    align-items: flex-start;
+  }
+  /*---------------------------------------------------------Media queries for User profile ends here-------------------------------------------------------------*/
+  /*---------------------------------------------------------Media queries for education starts here--------------------------------------------------------------*/
+  .education-title2 {
+    margin: 0;
+  }
+  .education-qualification-content {
+    flex-direction: column;
+  }
+  .education-qualification-instance {
+    margin-top: 1rem;
+    flex-direction: column;
+    padding-bottom: 1rem;
+  }
+}
+
+/*---------------------------------------------------------Media queries for education ends here-----------------------------------------------------------------*/
+
+/* ------------------------------- AboutMe.module.css starts here ------------------------------- */
+
+.aboutme-aboutsection {
+  width: 100%;
+  gap: 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutme-abouttitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 22px;
+  letter-spacing: -0.41px;
+  color: var(--primary-color);
+}
+
+.aboutme-abouttext {
+  width: 99%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 112%;
+  letter-spacing: 0.59px;
+  text-align: justify;
+  color: var(--white);
+  padding-top: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .aboutme-abouttext {
+    padding-left: 8px;
+  }
+}
+
+@media (max-width: 767px) {
+  .aboutme-abouttext {
+    padding-left: 5px;
+  }
+}
+
+/* ------------------------------- AboutMe.module.css ends here ------------------------------- */
+
+/* ------------------------------- NotFound.module.css starts here ------------------------------- */
+
+.container {
+  text-align: center;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background);
+  height: 80vh;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.paragraph {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.link {
+  color: var(--white);
+}
+
+.hero-image4 {
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ------------------------------- NotFound.module.css ends here ------------------------------- */
+
+/* ------------------------------- ProjectDetails.module.css starts here ------------------------------- */
+
+.project-stackused {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.projectdescription-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.projectdescription-topleft {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.projectdescription-backbutton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.projectdescription-backbutton:hover {
+  background-color: #0056b3;
+}
+
+.projectdescription-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.projectdescription-headingcontent h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.projectdescription-contentheading {
+  font-size: 36px;
+}
+
+.projectdescription-texted {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectdescription-text {
+  color: var(--white);
+  font-size: 20px;
+}
+
+.projectdescription-texts {
+  color: var(--white);
+}
+
+.projectdescription-container h2 {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.projectdescription-container h3 {
+  color: var(--primary-color);
+}
+
+.projectdescription-description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.projectdescription-desc {
+  color: var(--white);
+}
+
+.projectdescription-date {
+  color: var(--white);
+}
+
+.projectdescription-gap {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.projectdescription-time {
+  color: var(--white);
+}
+
+.projectdescription-timer {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectdescription-venue {
+  color: var(--white);
+}
+
+.projectdescription-address {
+  color: var(--white);
+}
+
+.projectdescription-align {
+  display: flex;
+  flex-direction: row;
+  gap: 10vw;
+}
+
+.projectdescription-speaker {
+  color: var(--white);
+}
+
+.projectdescription-navbutton {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.projectdescription-primarybutton {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+
+.projectdescription-buttondiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.projectdescription-primarydiv {
+  display: flex;
+  justify-content: right;
+  gap: 20px;
+  top: 20px;
+  left: 20px;
+}
+
+.projectdescription-buttondiv2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 480px) {
+  .projectdescription-hiddenbutton {
+    display: none;
+  }
+  .projectdescription-topleft {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .projectdescription-align {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .projectdescription-primarydiv {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .projectdescription-buttondiv2 {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .projectdescription-topleft {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .projectdescription-align {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .projectdescription-primarydiv {
+    position: static;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .projectdescription-topleft {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .projectdescription-align {
+    flex-direction: row;
+    gap: 50px;
+  }
+  .projectdescription-primarydiv {
+    position: static;
+    justify-content: flex-end;
+  }
+}
+
+/* ------------------------------- ProjectDetails.module.css ends here ------------------------------- */
+
+/* ------------------------------- TestDescription.module.css starts here ------------------------------- */
+.testdescription-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+  padding: 2vh 4vw;
+}
+
+.testdescription-topleft {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.testdescription-description {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+.testdescription-buttondiv {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.testdescription-buttondiv2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.testdescription-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.testdescription-contentheading {
+  font-size: 36px;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.testdescription-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 40px;
+  margin-top: 10px;
+}
+
+.testdescription-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.testdescription-field h3 {
+  font-size: 24px;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.testdescription-field p {
+  font-size: 19px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.testdescription-primarydiv {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .testdescription-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testdescription-primarydiv {
+    justify-content: center;
+  }
+
+  .testdescription-contentheading {
+    font-size: 28px;
+  }
+}
+
+
+
+/* ------------------------------- TestDescription.module.css ends here ------------------------------- */

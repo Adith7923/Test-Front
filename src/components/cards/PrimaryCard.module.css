@@ -1,0 +1,278 @@
+.cards {
+  position: relative;
+  width: 287px;
+  height: 193px;
+}
+
+.carousel {
+  position: relative;
+}
+
+.dateRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.cardOutline {
+  position: absolute;
+  max-width: 288px;
+  max-height: 194px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 1.5rem;
+  border-radius: 20px;
+  left: 0;
+  color: var(--white);
+}
+
+.cardOutlineHover {
+  z-index: 1;
+  position: absolute;
+  max-width: 288px;
+  max-height: 194px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 1.5rem;
+  border-radius: 20px;
+  left: 0;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.cardsminiheading {
+  text-align: start;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+}
+
+.cardsmainheading {
+  text-align: start;
+  width: 185px;
+  height: 48px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+}
+
+.cardsdate {
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+}
+
+.cardsdiscription {
+  text-align: start;
+  width: 240px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: -0.408px;
+}
+
+.leftCard {
+  position: absolute;
+  width: 208px;
+  height: 194px;
+  border-left: 1px solid var(--primary-color);
+  border-top: 1px solid var(--primary-color);
+  border-radius: 20px 0 0 20px;
+  left: 0;
+}
+
+.leftCardHover {
+  position: absolute;
+  width: 208px;
+  height: 194px;
+  border-radius: 20px 0 0 20px;
+  background-color: var(--white);
+  left: 0;
+}
+
+.rightCard {
+  position: absolute;
+  width: 288px;
+  height: 125px;
+  border-bottom: 1px solid var(--primary-color);
+  border-right: 1px solid var(--primary-color);
+  border-radius: 0 0 20px 20px;
+  left: 0;
+  top: 69px;
+}
+
+.rightCardHover {
+  position: absolute;
+  width: 288px;
+  height: 125px;
+  border-radius: 0 0 20px 20px;
+  left: 0;
+  background-color: var(--white);
+  top: 69px;
+}
+
+.mask {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-left: 1px solid var(--primary-color);
+  border-top: 0px solid var(--primary-color);
+  border-right: 0px solid var(--primary-color);
+  border-radius: 0 0 0 90%;
+  left: 231px;
+  top: 18px;
+}
+
+.maskHover {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 0 0 0 90%;
+  left: 232px;
+  top: 17px;
+  box-shadow: -3px 3px 0 2px var(--white);
+}
+
+.mask2 {
+  position: absolute;
+  width: 26px;
+  height: 22px;
+  border-top: 1px solid var(--primary-color);
+  border-right: 1px solid var(--primary-color);
+  border-radius: 0 69% 0 0;
+  left: 206px;
+  top: 0px;
+}
+
+.mask2Hover {
+  position: absolute;
+  width: 26px;
+  height: 22px;
+  border-radius: 0 69% 0 0;
+  left: 206px;
+  top: 0px;
+  background-color: var(--white);
+}
+
+.mask3 {
+  position: absolute;
+  width: 25px;
+  height: 23px;
+  border-top: 1px solid var(--primary-color);
+  border-right: 1px solid var(--primary-color);
+  border-radius: 0 69% 0 0;
+  left: 263px;
+  top: 57px;
+}
+
+.mask3Hover {
+  position: absolute;
+  width: 20px;
+  height: 23px;
+  border-radius: 0 69% 0 0;
+  left: 268px;
+  top: 57px;
+  background-color: var(--white);
+}
+
+.mask4 {
+  position: absolute;
+  width: 20px;
+  height: 23px;
+  border-radius: 0 69% 0 0;
+  left: 268px;
+  top: 57px;
+}
+
+.mask4Hover {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 0 0 0 90%;
+  left: 232px;
+  top: 17px;
+  box-shadow: -18px 18px 0 17px var(--white);
+}
+
+.arrow {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 0 0 0.5px var(--white);
+  border-radius: 50%;
+  left: 248px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+}
+
+.arrowHover {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 0 0 0.5px var(--white);
+  border-radius: 50%;
+  left: 248px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  border: 0.4px solid var(--primary-color);
+  color: #000000;
+  box-shadow: none;
+  background-color: var(--primary-color);
+}
+
+.mask5 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-bottom: 1px solid var(--primary-color);
+  border-top: 0px solid var(--primary-color);
+  border-right: 0px solid var(--primary-color);
+  border-radius: 0 0 0 90%;
+  left: 231px;
+  top: 18px;
+}
+
+.mask5Hover {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 0 0 0 90%;
+  left: 232px;
+  top: 17px;
+  box-shadow: -3px 3px 0 2px var(--white);
+}
+
+@keyframes highlight {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.highlight {
+  animation: highlight 3s ease-in-out;
+}

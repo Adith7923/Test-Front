@@ -1,0 +1,17 @@
+.stackcard{
+    width: fit-content;
+    padding:  7px 12px;
+    background-color: var(--neutral800);
+    color: var(--white);
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+.icon{
+    display: flex;
+    align-items: center;
+}

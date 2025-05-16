@@ -1,0 +1,13 @@
+/* ------------------------------- MentorEventsList.css starts here ------------------------------- */
+
+.mentoreventslist-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+/* ------------------------------- MentorEventsList.css ends here ------------------------------- */
+
+
+

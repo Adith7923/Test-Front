@@ -1,0 +1,52 @@
+.listItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 39px;
+  gap: 16px;
+  width: 166px;
+  height: 34px;
+  padding-left: 14px;
+  cursor: pointer;
+}
+
+.listItem:hover .icon,
+.listItem:hover .name {
+  color: #baff66;
+}
+
+.active {
+  display: flex;
+  align-items: center;
+  margin-bottom: 39px;
+  gap: 16px;
+  width: 163px;
+  height: 34px;
+  padding-left: 10px;
+  border-left: solid #baff66 4px;
+}
+
+.active:hover {
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 20px;
+  color: #efefef;
+}
+
+.name {
+  font-size: 16px;
+  line-height: 140%;
+  align-items: left;
+  color: #efefef;
+}
+
+@media (max-width: 767px) {
+  .listItem {
+    margin-bottom: 10px;
+  }
+
+  .active {
+    margin-bottom: 10px;
+  }
+}

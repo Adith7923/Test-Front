@@ -1,0 +1,200 @@
+
+/* ------------------------------- Addcollege.css starts here ------------------------------- */
+
+.addcollege-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    padding: 50px;
+    filter: drop-shadow(5px 5px 21px rgba(0, 0, 0, 0.25));
+    background: linear-gradient(
+        209deg,
+        rgba(255, 255, 255, 0.041),
+        rgba(0, 0, 0, 0.075)
+      ),
+      linear-gradient(198deg, rgba(0, 0, 0, 0.123), rgba(255, 255, 255, 0.068));
+    backdrop-filter: blur(45px);
+  }
+  
+  .addcollege-formgroup {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .addcollege-head {
+    font-size: 21px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .addcollege-error {
+    margin-top: 5px;
+    color: var(--warning-color);
+    font-size: 0.875rem;
+  }
+  
+  @media (max-width: 768px) {
+    .addcollege-container {
+      padding: 30px;
+      border-radius: 30px;
+      width: 100%;
+      height: fit-content;
+    }
+  
+    .addcollege-head {
+      font-size: 18px;
+    }
+  
+    .addcollege-formgroup {
+      gap: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .addcollege-container {
+      padding: 30px;
+      border-radius: 30px;
+      width: 100%;
+      height: fit-content;
+    }
+  
+    .addcollege-head {
+      font-size: 16px;
+    }
+  
+    .addcollege-formgroup {
+      gap: 15px;
+    }
+  }
+  
+  /* --------------------------------- Addcollege.css ends here -------------------------------- */
+  
+  /* ------------------------------- Collegelist.css starts here ------------------------------- */
+  
+  .collegelist-container {
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(
+        209deg,
+        rgba(255, 255, 255, 0.041),
+        rgba(0, 0, 0, 0.075)
+      ),
+      linear-gradient(198deg, rgba(0, 0, 0, 0.123), rgba(255, 255, 255, 0.068));
+    padding: 50px;
+    border-radius: 40px;
+    filter: drop-shadow(5px 5px 21px rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(45px);
+    overflow: scroll;
+  }
+  
+  .collegelist-college {
+    font-size: 21px;
+    color: white;
+  }
+  
+  .collegelist-table {
+    padding: 0%;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--neutral600) #ffffff00;
+  }
+  
+  .collegelist-container::-webkit-scrollbar {
+    width: 2px;
+    background-color: transparent;
+  }
+  
+  .collegelist-container::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+  }
+  
+  .collegelist-container::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+  
+  .collegelist-container:hover {
+    overflow-y: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .collegelist-container {
+      padding: 30px;
+      border-radius: 30px;
+      width: 100%;
+      height: fit-content;
+    }
+  
+    .collegelist-college {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .collegelist-container {
+      padding: 30px;
+      border-radius: 30px;
+      width: 100%;
+      height: fit-content;
+    }
+  
+    .collegelist-college {
+      font-size: 16px;
+    }
+  }
+  
+  /* ------------------------------- Collegelist.css ends here ------------------------------- */
+  
+  /* ------------------------ AdminCollegeParticipants.css starts here ------------------------ */
+
+.admincollegeparticipants-container {
+  width: 100%;
+  padding: 2vh 4vw;
+}
+.admincollegeparticipants-header {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.admincollegeparticipants-navbuttons {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 0px;
+}
+
+.admincollegeparticipants-navcount{
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.admincollegeparticipants-table {
+  margin-top: 0px;
+  width: 100%;
+  /* overflow-x: auto; */
+  scrollbar-width: thin;
+  color: white;
+  scrollbar-color: var(--neutral600) #ffffff00;
+}
+
+@media screen and (max-width: 768px) {
+  .admincollegeparticipants-container {
+    width: 100%;
+  }
+
+  .admincollegeparticipants-table {
+    width: 100%;
+  }
+
+  .admincollegeparticipants-navbuttons > *:not(:last-child) {
+    display: none;
+  }
+}
+
+/* ------------------------ AdminCollegeParticipants.css ends here ------------------------ */

@@ -1,0 +1,116 @@
+.box {
+  max-width: 1000px;
+  width: 100%;
+}
+ 
+.search-box {
+  position: relative;
+  height: 45px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid var(--white);
+  width: 100%;
+  width: 100%;
+}
+ 
+.search-box input {
+  flex: 1;
+  border-radius: 1.5px 0 0 25px;
+  outline: none;
+  border: none;
+  background: none;
+  padding-left: 15px;
+  font-size: 16px;
+  letter-spacing: -0.41px;
+  font-weight: 600;
+  padding-left: 15px;
+  font-size: 16px;
+  letter-spacing: -0.41px;
+  font-weight: 600;
+  color: var(--white);
+  width: 80%;
+}
+ 
+.icon-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+ 
+.icon-button .icon {
+  color: var(--white);
+  font-size: 24px;
+}
+ 
+.icon-button .icon:hover {
+  color: var(--primary-color);
+}
+ 
+.none {
+  display: none;
+}
+ 
+.custom-box {
+  width: 100%;
+  max-width: 1000px;
+}
+ 
+.small-box {
+  width: 100%;
+  max-width: 400px;
+}
+ 
+.small-box .search-box,
+.custom-box .search-box {
+  border-radius: 25px;
+}
+ 
+.small-box input,
+.custom-box input {
+  border-radius: 20px 0 0 20px;
+  padding-left: 15px;
+}
+ 
+.small-box .search-button,
+.custom-box .search-button {
+  border-radius: 0 18px 18px 0;
+}
+ 
+@media (min-width: 768px) and (max-width: 1235px) {
+  .small-box,
+  .custom-box {
+    width: 100%;
+  }
+ 
+  .small-box .search-box,
+  .custom-box .search-box {
+    width: 100%;
+  }
+}
+ 
+@media screen and (max-width: 767px) {
+  .search-box {
+    width: 125%;
+  }
+ 
+  .small-box {
+    width: 100%;
+  }
+ 
+  .custom-box {
+    width: 100%;
+  }
+ 
+  .small-box .search-box,
+  .custom-box .search-box {
+    width: 100%;
+  }
+  .box {
+    width: 80%;
+  }
+}

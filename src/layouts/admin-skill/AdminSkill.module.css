@@ -1,0 +1,145 @@
+/* ------------------------------- AddSkill.css starts here ------------------------------- */
+
+.addskill-boxcontainer {
+  border-radius: 30px;
+  width: 100%;
+  padding: 50px;
+  filter: drop-shadow(5px 5px 21px rgba(0, 0, 0, 0.25));
+  backdrop-filter: blur(20px);
+  background: linear-gradient(
+      209deg,
+      rgba(255, 255, 255, 0.041),
+      rgba(0, 0, 0, 0.075)
+    ),
+    linear-gradient(198deg, rgba(0, 0, 0, 0.123), rgba(255, 255, 255, 0.068));
+}
+
+.addskill-layoutcontainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 24px;
+}
+
+.addskill-layoutcontainer p {
+  color: var(--white);
+  font-size: 24px;
+}
+
+.addskill-buttonrow {
+  display: flex;
+  gap: 20px;
+}
+
+.error-message {
+  color: var(--warning-color);
+  font-size: 14px;
+  margin-top: -20px;
+}
+
+@media (max-width: 767px) {
+  .addskill-boxcontainer {
+    padding: 30px;
+    border-radius: 30px;
+  }
+}
+
+/* ------------------------------- AddSkill.css ends here ------------------------------- */
+
+/* ------------------------------- DeleteSkill.css starts here ------------------------------- */
+
+.deleteskill-boxcontainer {
+  border-radius: 30px;
+  width: 100%;
+  padding: 50px;
+  filter: drop-shadow(5px 5px 21px rgba(0, 0, 0, 0.25));
+  backdrop-filter: blur(20px);
+  background: linear-gradient(
+      209deg,
+      rgba(255, 255, 255, 0.041),
+      rgba(0, 0, 0, 0.075)
+    ),
+    linear-gradient(198deg, rgba(0, 0, 0, 0.123), rgba(255, 255, 255, 0.068));
+}
+
+.deleteskill-layoutcontainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 24px;
+}
+
+.deleteskill-layoutcontainer p {
+  color: var(--white);
+  font-size: 24px;
+}
+
+.deleteskill-buttonrow {
+  display: flex;
+  gap: 20px;
+}
+
+.error-message {
+  color: var(--warning-color);
+  font-size: 14px;
+  margin-top: -20px;
+}
+
+@media (max-width: 767px) {
+  .deleteskill-boxcontainer {
+    padding: 30px;
+    border-radius: 30px;
+  }
+}
+
+/* ------------------------------- DeleteSkill.css ends here ------------------------------- */
+
+/* ------------------------ AdminSkillParticipants.css starts here ------------------------ */
+
+.adminskillparticipants-container {
+  width: 100%;
+}
+.adminskillparticipants-header {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.adminskillparticipants-navbuttons {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 0px;
+}
+
+.adminskillparticipants-table {
+  margin-top: 0px;
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  color: white;
+  scrollbar-color: var(--neutral600) #ffffff00;
+}
+.adminskillparticipants-nav{
+  display: flex;
+  color:var(--white);
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .adminskillparticipants-container {
+    width: 100%;
+  }
+
+  .adminskillparticipants-table {
+    width: 100%;
+  }
+
+  .adminskillparticipants-navbuttons > *:not(:last-child) {
+    display: none;
+  }
+}
+
+/* ------------------------ AdminSkillParticipants.css ends here ------------------------ */

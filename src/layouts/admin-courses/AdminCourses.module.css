@@ -1,0 +1,151 @@
+/* ------------------------------- AdminCourseDetails.css starts here ------------------------------- */
+
+.coursedetails {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+}
+.head {
+  color: var(--primary-color);
+}
+.headLayout_head {
+  padding-top: 18px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.skills {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  padding: 5px 0px;
+}
+.headLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.details {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  align-items: center;
+}
+.star {
+  color: var(--primary-color);
+}
+.modules {
+  padding: 20px 0px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.mentor {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.mentorData {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.coursedetails_nav {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+/* ------------------------------- AdminCourseDetails.css ends here ------------------------------- */
+
+/* ------------------------------- AdminSubCourseDetails.css starts here ------------------------------- */
+
+.subcourse {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+  justify-content: space-between;
+  color: white;
+  margin-top: 30px;
+}
+.subcourse_body {
+  display: flex;
+  flex-direction: row;
+  gap: 27px;
+  width: 100%;
+  justify-content: space-between;
+}
+.subcourse_modules {
+  display: flex;
+  gap: 35px;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+}
+.subcourse_nextbutton {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+}
+.subcourse_headLayout {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.subcourse_content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.subcourse_nav {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.subcourse_head {
+  color: var(--primary-color);
+}
+.subcourse_subcontent {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.subcourse_subcontentsection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.rightnav_container{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #383838;
+  height: fit-content;
+  border-radius: 4px;
+  width: 362px;
+}
+.rightnav_modules{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.subcourse_imgcontainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.subcourse_img{
+  max-width: 50%;    
+  height: auto;       
+  min-width: 200px;  
+  object-fit: contain; 
+
+}
