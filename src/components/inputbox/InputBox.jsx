@@ -1,5 +1,6 @@
 import React, { useState, forwardRef } from "react";
 import { FaRegImage } from "react-icons/fa";
+import PropTypes from "prop-types";
 import styles from "./InputBox.module.css";
 
 const InputBox = forwardRef(
@@ -23,25 +24,18 @@ const InputBox = forwardRef(
   ) => {
     const [clicked, setClicked] = useState(false);
     const [fileName, setFileName] = useState("");
-    const handleFocus = () => {
-      setClicked(true);
-    };
+
+    const handleFocus = () => setClicked(true);
 
     const handleBlur = (event) => {
       setClicked(false);
-      if (onBlur) {
-        onBlur(event);
-      }
+      if (onBlur) onBlur(event);
     };
 
     const handleFileChange = (event) => {
       const file = event.target.files[0];
-      if (file) {
-        setFileName(file.name);
-      }
-      if (onChange) {
-        onChange(event);
-      }
+      if (file) setFileName(file.name);
+      if (onChange) onChange(event);
     };
 
     const handleSelectChange = (event) => {
@@ -50,16 +44,15 @@ const InputBox = forwardRef(
     };
 
     return (
-      <div
-        className={`${styles["input-container"]} ${clicked ? styles.clicked : ""}`}
-      >
+      <div className={`${styles["input-container"]} ${clicked ? styles.clicked : ""}`}>
         <div className={styles["input-label-container"]}>
           <label htmlFor={rest.id} className={styles["input-label"]}>
             {label}
           </label>
           {icon && <span className={styles["input-icon"]}>{icon}</span>}
         </div>
-        {placeholders.map((placeholder, index) => (
+
+        {(placeholders || [""]).map((placeholder, index) => (
           <React.Fragment key={index}>
             {isDatePicker ? (
               <input
@@ -113,8 +106,8 @@ const InputBox = forwardRef(
                 onBlur={handleBlur}
                 className={`${styles.input} ${size === "normal" ? styles["normal-size"] : ""} ${size === "small" ? styles["small-size"] : ""}`}
               >
-                {options.map((option, index) => (
-                  <option key={index} value={option.value}>
+                {options?.map((option, idx) => (
+                  <option key={idx} value={option.value}>
                     {option.label}
                   </option>
                 ))}
@@ -132,8 +125,8 @@ const InputBox = forwardRef(
               />
             ) : (
               <input
-                {...rest}
                 ref={ref}
+                {...rest}
                 value={value}
                 onChange={onChange}
                 onFocus={handleFocus}
@@ -148,5 +141,39 @@ const InputBox = forwardRef(
     );
   }
 );
+
+// ✅ Default Props
+InputBox.defaultProps = {
+  placeholders: [""],
+  options: [],
+  size: "normal",
+  label: "",
+  isDatePicker: false,
+  isTimePicker: false,
+  isFileInput: false,
+  isDropdown: false,
+  icon: null,
+};
+
+// ✅ Prop Types (optional but helpful)
+InputBox.propTypes = {
+  size: PropTypes.oneOf(["small", "normal", "large"]),
+  label: PropTypes.string,
+  placeholders: PropTypes.arrayOf(PropTypes.string),
+  value: PropTypes.any,
+  onChange: PropTypes.func,
+  onBlur: PropTypes.func,
+  isDatePicker: PropTypes.bool,
+  isTimePicker: PropTypes.bool,
+  isFileInput: PropTypes.bool,
+  isDropdown: PropTypes.bool,
+  options: PropTypes.arrayOf(
+    PropTypes.shape({
+      label: PropTypes.string,
+      value: PropTypes.any,
+    })
+  ),
+  icon: PropTypes.element,
+};
 
 export default InputBox;

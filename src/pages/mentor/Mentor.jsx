@@ -4,7 +4,7 @@ import SideBar from "../../layouts/common/components/SideBar";
 import Button from "../../components/buttons/PrimaryButton";
 import Dp from "../../../src/assets/DP.png";
 import edunexa from "../../../src/assets/edunexa.png";
-import { MdEvent, MdAccountCircle, MdPsychology, MdMenuBook } from "react-icons/md";
+import { MdEvent, MdAccountCircle, MdPsychology, MdMenuBook, MdAssignment } from "react-icons/md";
 import ProfileNotificationBox from "../../components/profilenotificationbox/ProfileNotificationBox";
 import Footer from "../../layouts/common/components/Footer";
 import MentorProfile from "./mentor-profile/MentorProfile";
@@ -19,6 +19,10 @@ import LoadingSpinner from "../../components/loadingspinner/LoadingSpinner";
 import Modal from "../../layouts/common/components/Modal";
 import LogoutBox from "../../layouts/common/components/LogoutBox";
 import secureLocalStorage from "react-secure-storage";
+import AdminTests from "../mentor/mentor-tests/MentorTest";
+import AddTest from "../admin/admin-tests/AdminAddTest";
+import AdminEditTest from "../admin/admin-tests/AdminEditTest";
+import TestDetails from "../admin/admin-tests/TestDetails";
 
 const MentorContent = () => {
   const [Data, setData] = useState({
@@ -124,6 +128,12 @@ const MentorContent = () => {
         viewIcon: true,
         page: "courses",
       },
+      {
+        icon: <MdAssignment />,
+        name: "Tests",
+        viewIcon: true,
+        page: "tests",
+      },
     ],
     profileBox: {
       name: primaryData.name,
@@ -171,6 +181,11 @@ const MentorContent = () => {
               <Route path="/profile" element={<MentorProfile />} />
               <Route path="/events" element={<MentorEvents />} />
               <Route path="/skills" element={<MentorSkills />} />
+              <Route path="tests" element={<AdminTests />} />
+                  <Route path="tests/add" element={<AddTest />} />
+                  <Route path="tests/:testId/edit-test" element={<AdminEditTest />} />
+                  <Route path="tests/test-details/:testId" element={<TestDetails />} />
+
               <Route
                 path="/events/event-creation"
                 element={<MentorCreateEvent />}

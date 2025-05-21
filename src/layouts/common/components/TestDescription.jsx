@@ -1,9 +1,11 @@
 import React from "react";
-import styles from "../Common.module.css"; // Adjust the path accordingly
+import { useNavigate } from "react-router-dom";
+import styles from "../Common.module.css";
 import NavButton from "../../../components/buttons/NavButton";
 import PrimaryButton from "../../../components/buttons/PrimaryButton";
 
 const TestDescription = ({
+  testId, // ✅ Add testId to props
   testTitle,
   level,
   skill,
@@ -11,28 +13,41 @@ const TestDescription = ({
   topics,
   noOfQuestions,
   duration,
-  passPercentage, // ✅ Add this
+  passPercentage,
   buttonLabel,
   onClick,
   showButton,
 }) => {
+  const navigate = useNavigate();
+
+  const handleEditClick = () => {
+    navigate(`/admin/tests/${testId}/edit-test`);
+  };
+
 
   return (
     <div className={styles["testdescription-container"]}>
-      <div className={styles["testdescription-topleft"]}>
-        <div className={styles["testdescription-navbutton"]}>
-          <NavButton pageName="Test Details" />
-        </div>
+      {/* NavButton at the top */}
+      <div className={styles["testdescription-topbar"]}>
+        <NavButton pageName="Test Details" />
+      </div>
+
+      {/* Heading and Edit button */}
+      <div className={styles["testdescription-headerbar"]}>
+        <h2 className={styles["testdescription-contentheading"]}>
+          Test Details
+        </h2>
+        <PrimaryButton
+          content="Edit Test"
+          variant="secondary"
+          onClick={handleEditClick}
+        />
       </div>
 
       <div className={styles["testdescription-description"]}>
         <div className={styles["testdescription-buttondiv"]}>
           <div className={styles["testdescription-buttondiv2"]}>
             <div className={styles["testdescription-content"]}>
-              <h2 className={styles["testdescription-contentheading"]}>
-                Test Details
-              </h2>
-
               <div className={styles["testdescription-grid"]}>
                 <div className={styles["testdescription-field"]}>
                   <h3>Test Name</h3>
@@ -64,7 +79,7 @@ const TestDescription = ({
                 </div>
                 <div className={styles["testdescription-field"]}>
                   <h3>Pass Percentage</h3>
-                  <p>{passPercentage}%</p> 
+                  <p>{passPercentage}%</p>
                 </div>
               </div>
             </div>

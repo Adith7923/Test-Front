@@ -4,8 +4,15 @@
   padding: 2rem;
   border-radius: 16px;
   box-sizing: border-box;
+  padding: 0 2rem ;
 }
 
+.addTestTopbar{
+  margin-bottom: 10px;
+}
+.editTestTopbar{
+  margin-bottom: 10px;
+}
 .heading {
   font-size: 32px;
   font-weight: bold;

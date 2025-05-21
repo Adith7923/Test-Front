@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import QuestionCard from "../../components/cards/QuestionCard"; // adjust path as needed
-import styles from "./AddQuestion.module.css"; // CSS module for layout
-import PrimaryButton from "../../components/buttons/PrimaryButton"; // Add this import
+import QuestionCard from "../../components/cards/QuestionCard";
+import styles from "./AddQuestion.module.css";
+import PrimaryButton from "../../components/buttons/PrimaryButton";
+import AddQuestionModal from "./components/AddQuestionModal";
 
 const AddQuestion = () => {
   const [questions, setQuestions] = useState([
@@ -18,6 +19,8 @@ const AddQuestion = () => {
   ]);
 
   const [selectedOptions, setSelectedOptions] = useState({});
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [editingQuestion, setEditingQuestion] = useState(null); // 👈 Track if editing
 
   const handleOptionChange = (questionId, selectedOption) => {
     setSelectedOptions((prev) => ({
@@ -27,8 +30,13 @@ const AddQuestion = () => {
   };
 
   const handleEdit = (id) => {
-    console.log("Edit clicked for question", id);
-    // add edit logic here
+    const question = questions.find((q) => q.id === id);
+    setEditingQuestion({
+      id: question.id,
+      question: question.text,
+      options: question.options.map((text) => ({ text })),
+    });
+    setIsModalOpen(true);
   };
 
   const handleDelete = (id) => {
@@ -36,8 +44,38 @@ const AddQuestion = () => {
   };
 
   const handleAddQuestion = () => {
-    console.log("Add Question clicked");
-    // logic to open modal or add question
+    setEditingQuestion(null); // 👈 Ensure fresh modal
+    setIsModalOpen(true);
+  };
+
+  const handleSaveQuestion = (newQuestion) => {
+    if (editingQuestion) {
+      // Editing existing question
+      setQuestions((prev) =>
+        prev.map((q) =>
+          q.id === editingQuestion.id
+            ? {
+                ...q,
+                text: newQuestion.question,
+                options: newQuestion.options.map((opt) => opt.text),
+              }
+            : q
+        )
+      );
+    } else {
+      // Adding new question
+      const nextId = questions.length ? Math.max(...questions.map((q) => q.id)) + 1 : 1;
+      setQuestions((prev) => [
+        ...prev,
+        {
+          id: nextId,
+          text: newQuestion.question,
+          options: newQuestion.options.map((opt) => opt.text),
+        },
+      ]);
+    }
+    setIsModalOpen(false);
+    setEditingQuestion(null);
   };
 
   return (
@@ -52,22 +90,30 @@ const AddQuestion = () => {
       </div>
 
       <div className={styles.cardList}>
-        
         {questions.map((question) => (
-  <QuestionCard
-    key={question.id}
-    questionNumber={question.id}
-    questionText={question.text}
-    options={question.options.map((text, index) => ({ id: index, text }))}
-    selectedOption={selectedOptions[question.id]}
-    onOptionChange={(optionId) => handleOptionChange(question.id, optionId)}
-    variant="editable"
-    onEdit={() => handleEdit(question.id)}
-    onDelete={() => handleDelete(question.id)}
-  />
-))}
-
+          <QuestionCard
+            key={question.id}
+            questionNumber={question.id}
+            questionText={question.text}
+            options={question.options.map((text, index) => ({ id: index, text }))}
+            selectedOption={selectedOptions[question.id]}
+            onOptionChange={(optionId) => handleOptionChange(question.id, optionId)}
+            variant="editable"
+            onEdit={() => handleEdit(question.id)}
+            onDelete={() => handleDelete(question.id)}
+          />
+        ))}
       </div>
+
+      <AddQuestionModal
+        isOpen={isModalOpen}
+        onClose={() => {
+          setIsModalOpen(false);
+          setEditingQuestion(null);
+        }}
+        onSave={handleSaveQuestion}
+        initialQuestion={editingQuestion} // 👈 Pass for editing
+      />
     </div>
   );
 };

@@ -46,7 +46,7 @@ import SubCourseDetails from "./admin-courses/SubCourseDetails";
 import AdminTests from "./admin-tests/AdminTest";
 import AddTest from "./admin-tests/AdminAddTest";
 import TestDetails from "./admin-tests/TestDetails";
-
+import AdminEditTest from "./admin-tests/AdminEditTest"; // Adjust path if needed
 
 const AdminContent = () => {
   const [userData, setUserData] = useState(null);
@@ -244,6 +244,7 @@ const AdminContent = () => {
                   <Route path="courses/course-details/modules" element={<SubCourseDetails/>} />
                   <Route path="tests" element={<AdminTests />} />
                   <Route path="tests/add" element={<AddTest />} />
+                  <Route path="tests/:testId/edit-test" element={<AdminEditTest />} />
                   <Route path="tests/test-details/:testId" element={<TestDetails />} />
 
 

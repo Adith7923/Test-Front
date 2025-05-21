@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import InputBox from "../../components/inputbox/InputBox";
 import InputDropdown from "../../components/inputdropdown/InputDropdown";
 import styles from "./AddTest.module.css";
-
+import NavButton from "../../components/buttons/NavButton";
 const AddTest = () => {
   const [formData, setFormData] = useState({
   testName: "",
@@ -49,6 +49,9 @@ const AddTest = () => {
 
   return (
     <div className={styles.addTestContainer}>
+              <div className={styles.addTestTopbar}>
+                <NavButton pageName="Create Test" />
+              </div>
       <h2 className={styles.heading}>Create New Test</h2>
       <form onSubmit={handleSubmit} className={styles.form}>
   {/* Line 1: Test Name + Level */}

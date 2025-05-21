@@ -4,6 +4,7 @@ import AdminTestDescription from "../../../layouts/admin-tests/components/AdminT
 import Dropdown from "../../../components/dropdown/Dropdown";
 import QuestionCard from "../../../components/cards/QuestionCard";
 import Table from "../../../components/table/Table";
+import AddQuestionModal from "../../../layouts/admin-tests/components/AddQuestionModal";
 
 const mockTests = [
   {
@@ -20,6 +21,19 @@ const mockTests = [
     duration: "40 minutes",
     creator: "Smera",
     passPercentage: 50,
+    questions: [
+      {
+        id: 1,
+        questionText: "What is 2 + 2?",
+        options: [
+          { id: "1", text: "1" },
+          { id: "2", text: "2" },
+          { id: "3", text: "3" },
+          { id: "4", text: "4" },
+        ],
+        selectedOption: "4",
+      },
+    ],
   },
   {
     testId: 102,
@@ -34,12 +48,15 @@ const mockTests = [
     numberOfQuestions: 25,
     duration: "50 minutes",
     creator: "Shivam",
+    questions: [],
   },
 ];
 
 const TestDetails = () => {
   const { testId } = useParams();
   const [test, setTest] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentQuestion, setCurrentQuestion] = useState(null);
 
   useEffect(() => {
     const selected = mockTests.find((t) => t.testId.toString() === testId);
@@ -56,6 +73,26 @@ const TestDetails = () => {
     // TODO: Call delete API here
   };
 
+  const handleEditQuestion = (question) => {
+    setCurrentQuestion(question);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setCurrentQuestion(null);
+  };
+
+  const handleSaveQuestion = (updatedQuestion) => {
+    setTest((prevTest) => ({
+      ...prevTest,
+      questions: prevTest.questions.map((q) =>
+        q.id === updatedQuestion.id ? updatedQuestion : q
+      ),
+    }));
+    handleCloseModal();
+  };
+
   if (!test) return <p style={{ padding: "2rem" }}>Loading test...</p>;
 
   const {
@@ -67,6 +104,7 @@ const TestDetails = () => {
     duration,
     creator,
     passPercentage,
+    questions,
   } = test;
 
   const fetchedFormData = {
@@ -86,24 +124,27 @@ const TestDetails = () => {
         onDelete={handleDelete}
         testId={testId}
         creator={creator}
-        passPercentage={passPercentage} // Pass this if AdminTestDescription uses it
+        passPercentage={passPercentage}
       />
 
-      <div style={{ marginTop: "2rem", padding: "0 2rem" }}>
+      <div style={{ marginTop: "2rem", padding: "0 2rem", color: "#fff" }}>
         <Dropdown title="View Questions">
-          <QuestionCard
-            questionNumber={1}
-            questionText="What is 2 + 2?"
-            options={[
-              { id: "1", text: "1" },
-              { id: "2", text: "2" },
-              { id: "3", text: "3" },
-              { id: "4", text: "4" },
-            ]}
-            selectedOption={"4"}
-            onOptionChange={() => {}}
-            variant="default"
-          />
+          {questions && questions.length > 0 ? (
+            questions.map((q) => (
+              <QuestionCard
+                key={q.id}
+                questionNumber={q.id}
+                questionText={q.questionText}
+                options={q.options}
+                selectedOption={q.selectedOption}
+                onOptionChange={() => {}}
+                variant="editable"
+                onEdit={() => handleEditQuestion(q)}
+              />
+            ))
+          ) : (
+            <p>No questions available.</p>
+          )}
         </Dropdown>
       </div>
 
@@ -120,6 +161,15 @@ const TestDetails = () => {
           />
         </Dropdown>
       </div>
+
+      {isModalOpen && (
+        <AddQuestionModal
+          isOpen={isModalOpen}
+          onClose={handleCloseModal}
+          onSave={handleSaveQuestion}
+          initialQuestion={currentQuestion}
+        />
+      )}
     </div>
   );
 };
